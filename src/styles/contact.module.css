@@ -1,0 +1,209 @@
+.readyContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.readyWrapper{
+    background-color: #052761;
+    margin: 20px;
+    padding: 100px;
+    gap: 10px;
+    border-radius: 24px;
+    opacity: 0px;
+}
+
+.readyWrapper p{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
+    color: white;
+}
+
+.contactContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.contactWrapper{
+    display: flex;
+    gap: 34px;
+    border-radius: 24px;
+    opacity: 0px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.contactUs{
+    flex: 1;
+    background-color: #EBEEF2;
+    padding: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contactHeading{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: left;
+    color: #052761;
+}
+
+.field{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.value{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: #052761;
+}
+
+.logo{
+    background-color: #052761;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getInTouch{
+    flex: 1;
+    background-color: #EBEEF2;
+    padding: 100px;
+    border-radius: 20px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.formHeading{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: left;
+    color: #052761;
+}
+
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formLabel{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #052761;
+}
+
+.input{
+    width: 484px;
+    height: 61px;
+    padding: 10px;
+    gap: 10px;
+    opacity: 0px;
+    color: gray;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #052761;
+    width: 100%;
+    padding: 12px 0px 12px 0px;
+    gap: 10px;
+    border-radius: 12px;
+    opacity: 0px;
+    color: white;
+}
+
+/* Add these media queries at the end of your CSS file */
+
+@media only screen and (max-width: 768px) {    
+    .readyWrapper p {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .contactWrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .contactUs, .getInTouch {
+      padding: 50px;
+    }
+  
+    .input {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+  
+    .readyWrapper p {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  
+    .contactUs, .getInTouch {
+      padding: 30px;
+    }
+  
+    .input {
+      width: calc(100% - 20px); /* Adjust for padding */
+    }
+  
+    .btnWrapper {
+      padding: 8px 0;
+    }
+  }
+  
+  @media (max-width:1024px) {
+    .contactWrapper{
+        padding: 50px;
+    }
+
+    .readyWrapper{
+        padding: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .contactWrapper{
+        padding: 00px;
+        margin: 5px;
+    }
+
+    .readyWrapper{
+        margin: 5px;
+        padding: 20px;
+    }
+
+    .getInTouch{
+        gap: 15px;
+    }
+}

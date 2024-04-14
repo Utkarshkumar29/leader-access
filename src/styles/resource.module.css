@@ -1,0 +1,93 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    background-color: #052761;
+    margin: 20px;
+    padding: 100px;
+    gap: 10px;
+    border-radius: 24px;
+    opacity: 0px;
+}
+
+
+@media (max-width:1024px) {
+    .wrapper{
+        padding: 50px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .wrapper{
+        padding: 30px;
+        margin: 5px;
+    }
+}
+
+.wrapper p{
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.resourceCardContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.heroSection{
+    width: 100%;
+}
+
+.resourceHeroImg{
+    max-width: 2600px;
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+
+.paraContainer{
+    width: 100%;
+}
+
+.date{
+    padding-top: 50px;
+    padding-left: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #052761;
+    text-align: left;
+}
+
+.paraWrapper{
+    padding: 60px;
+}
+
+.paraWrapper p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justified;
+    color: #2E2E38;
+}
+
+.resourceinsightsWrapper{
+    display: flex;
+    flex-direction: column;
+    background-color:#;    
+    padding: 64px 100px 64px 100px;
+    gap: 64px;
+    border-radius: 24px;
+    opacity: 0px;
+    margin: 20px;
+}

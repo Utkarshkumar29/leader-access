@@ -1,0 +1,88 @@
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_heading{
+    color: #052761;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37.07px;
+    text-align: left;
+}
+
+.navButtons{
+    display: flex;
+    gap: 30px;
+}
+
+.navButton{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    gap: 30px;
+}
+
+.downContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.nav_contact{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinContainer{
+    display: flex;
+    border: 2px solid #052761;
+    padding: 10px;
+    border-radius: 10px;
+    color:  #052761;
+    gap: 10px;
+    width: 100px;
+    justify-content: center;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinContainer img{
+    height: 10px;
+}
+
+.joinButton{
+}
+
+.contactButton{
+    display: flex;
+    background-color:#052761;
+    padding: 10px;
+    border-radius: 10px;
+    color:  white;
+    gap: 10px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .navButtons,.nav_contact{
+        display: none;
+    }
+}
