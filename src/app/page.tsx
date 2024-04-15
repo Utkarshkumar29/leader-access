@@ -4,6 +4,7 @@ import style from "../styles/leader.module.css";
 import Link from "next/link";
 import Navbar from "@/components/navbar/page";
 import Image from "next/image";
+import Footer from "@/components/footer/page";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -16,11 +17,13 @@ export default function Home() {
 
         {/*Hero Section */}
         <div className={style.heroImageContainer}>
-          <Image
-            src="/images/landing/hero_section.svg"
-            className={style.heroImage}
-            alt="Error"
-          />
+        <Image
+          src="/images/landing/hero_section.svg"
+          className={style.heroImage} // Add a new class to make the image full width
+          alt="Error"
+          width={0}
+          height={500}
+        />
         </div>
 
         {/*Partners*/}
@@ -29,16 +32,16 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Partners</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
-                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.partnerLogos}>
-              <Image src="/images/landing/birla.svg" alt="Error" className={style.heroImage}/>
-              <Image src="/images/landing/cred.svg" alt="Error" />
-              <Image src="/images/landing/paytm.svg" alt="Error" />
-              <Image src="/images/landing/payU.svg" alt="Error" />
-              <Image src="/images/landing/zopper.svg" alt="Error" />
+              <Image src="/images/landing/birla.svg" alt="Error" className={style.heroImage} width={200} height={150}/>
+              <Image src="/images/landing/cred.svg" alt="Error" width={200} height={150}/>
+              <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={150}/>
+              <Image src="/images/landing/payU.svg" alt="Error" width={200} height={150}/>
+              <Image src="/images/landing/zopper.svg" alt="Error" width={200} height={150}/>
             </div>
           </div>
         </div>
@@ -49,14 +52,14 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Positions We Are Hiring </p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
-                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
+              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.positions}>
-              <Image src="/images/landing/posi_manager.svg" alt="error"/>
-              <Image src="/images/landing/posi_chief.svg" className="" alt="Errro"/>
-              <Image src="/images/landing/posi_tech.svg" className="" alt="Error"/>
+              <Image src="/images/landing/posi_manager.svg" alt="error" width={400} height={300}/>
+              <Image src="/images/landing/posi_chief.svg" className="" alt="Errro" width={400} height={300}/>
+              <Image src="/images/landing/posi_tech.svg" className="" alt="Error" width={400} height={300}/>
             </div>
             <div className={style.buttonContainer}>
               <p className={style.positionsView}>View All</p>
@@ -76,7 +79,7 @@ export default function Home() {
                 }}
                 onMouseOut={() => setIsHovered(false)}
               >
-                <Image src="/images/landing/service1.svg" alt="Error"/>
+                <Image src="/images/landing/service1.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -85,7 +88,7 @@ export default function Home() {
                 {isHovered && <p className={style.hoveredBtn}>View All</p>}
               </div>
               <div className={style.serviceCard}>
-                <Image src="/images/landing/service2.svg" alt="Error"/>
+                <Image src="/images/landing/service2.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -94,7 +97,7 @@ export default function Home() {
                 {isHovered && <p className={style.positionsView}>View All</p>}
               </div>
               <div className={style.serviceCard}>
-                <Image src="/images/landing/service3.svg" alt="Error"/>
+                <Image src="/images/landing/service3.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -112,15 +115,15 @@ export default function Home() {
             <p className={style.partnerHeading}>Industries We Serve</p>
             <div className={style.industriesCards}>
               <div>
-                <Image src="/images/landing/industry1.svg" alt="Error"/>
+                <Image src="/images/landing/industry1.svg" alt="Error" width={400} height={300}/>
                 <div className={style.industriesCount}>
                   <p>30+ Industries</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
               <div className={style.lineSeparator}>
-                <Image src="/images/landing/industry2.svg" alt="Error"/>
-                <Image src="/images/landing/industry3.svg" alt="Error"/>
+                <Image src="/images/landing/industry2.svg" alt="Error" width={400} height={300}/>
+                <Image src="/images/landing/industry3.svg" alt="Error" width={400} height={300}/>
               </div>
               <div className={style.industryScroll}>
                 <p className={style.scrollHeading}>Software Services</p>
@@ -147,15 +150,15 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Unique Approach</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
+              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
                 <p>1/12</p>
-                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.ourApproachCardWrapper}>
               <div className={style.approachCardOne}>
                 <div className={style.frame}>
-                  <Image src="/images/landing/Frame 1.svg" alt="Error"/>
+                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.approachCardHeading}>
                   Alignment with Organizational Goals
@@ -171,7 +174,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -187,7 +190,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -203,7 +206,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -219,7 +222,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -235,7 +238,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -251,7 +254,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -267,7 +270,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -283,7 +286,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -299,7 +302,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -315,7 +318,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -331,7 +334,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -355,14 +358,14 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Client Testimonials</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
-                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.scrollCardWrapper}>
               <div className={style.clientCard}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -376,7 +379,7 @@ export default function Home() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -390,7 +393,7 @@ export default function Home() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -421,7 +424,7 @@ export default function Home() {
                 }}
                 onMouseOut={() => setIsHovered(false)}
               >
-                <Image src="/images/landing/case.svg" alt="Error"/>
+                <Image src="/images/landing/case.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -429,7 +432,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={style.serviceCard}>
-                <Image src="/images/landing/case.svg" alt="Error"/>
+                <Image src="/images/landing/case.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>Talent Advisory</p>
                 <p className={style.serviceCardDescription}>
                   Optimize your talent acquisition and retention strategies with
@@ -437,7 +440,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={style.serviceCard}>
-                <Image src="/images/landing/case.svg" alt="Error"/>
+                <Image src="/images/landing/case.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>
                   Leadership Development
                 </p>
@@ -466,7 +469,7 @@ export default function Home() {
                 }}
                 onMouseOut={() => setIsHovered(false)}
               >
-                <Image src="/images/landing/insights1.svg" alt="Error"/>
+                <Image src="/images/landing/insights1.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   In UK Retail, a Surge in Female CEOs
                 </p>
@@ -477,7 +480,7 @@ export default function Home() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard}>
-                <Image src="/images/landing/insights2.svg" alt="Error"/>
+                <Image src="/images/landing/insights2.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   5 Traits CEO and Astronauts Share
                 </p>
@@ -488,7 +491,7 @@ export default function Home() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard}>
-                <Image src="/images/landing/insights3.svg" alt="Error"/>
+                <Image src="/images/landing/insights3.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   Performance Reviews: A Dreaded or Welcome Return?
                 </p>
@@ -515,60 +518,7 @@ export default function Home() {
         </div>
 
         {/*Footer */}
-        <div className={style.footerContainer}>
-            <div className={style.footerWrapper}>
-                <div className={style.footerContents}>
-                    <div className={style.whiteContainer}>
-                        <Image src="/images/landing/white_logo.svg" alt="Error"/>
-                        <p className={style.footerHeading}>Leaders Access</p>
-                    </div>
-                    <div className={style.linksWrapper}>
-                        <div className={style.topicsContainer}>
-                            <p className={style.topicsHeading}>Pages</p>
-                            <div className={style.topics}>
-                                <p>Home</p>
-                                <p>About</p>
-                                <p>Insights</p>
-                                <p>Case Studies</p>
-                                <p>Contact</p>
-                            </div>
-                        </div>
-                        <div className={style.topicsContainer}>
-                            <p className={style.topicsHeading}>Services</p>
-                            <div className={style.topics}>
-                                <p>Executive Search</p>
-                                <p>Talent Advisory</p>
-                                <p>Recruitment Process</p>
-                                <p>Outsourcing</p>
-                            </div>
-                        </div>
-                        <div className={style.topicsContainer}>
-                            <p className={style.topicsHeading}>Expertise</p>
-                            <div className={style.topics}>
-                                <p>Industries</p>
-                                <p>Functions</p>
-                            </div>
-                        </div>
-                        <div className={style.topicsContainer}>
-                            <p className={style.topicsHeading}>Jobs</p>
-                            <div className={style.topics}>
-                                <p>Browse Jobs</p>
-                                <p>Submit Your CV</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className={style.whiteLine}></div>
-                    <div className={style.copyRight}>
-                    <p>Copyright © 2024 Leaders Access</p>
-                    <div className={style.terms}>
-                        <p>Privacy Policy</p>
-                        <p>Terms & Conditions</p>
-                        <p>Disclaimer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Footer/>
       </div>
     </div>
   );

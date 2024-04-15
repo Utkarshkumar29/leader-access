@@ -5,6 +5,7 @@ import expertStyle from "../../styles/expertise.module.css";
 import resourceStyle from "../../styles/resource.module.css";
 import Navbar from "@/components/navbar/page";
 import Image from "next/image";
+import Footer from "@/components/footer/page";
 
 export default function Resources() {
   return (
@@ -28,7 +29,7 @@ export default function Resources() {
               
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
               <Link href="/resources/insights">
-                <Image src="/images/landing/insights1.svg" alt="Error"  />
+                <Image src="/images/landing/insights1.svg" alt="Error" width={400} height={300} />
                 <p className={style.insightsCardHeading}>
                   In UK Retail, a Surge in Female CEOs
                 </p>
@@ -40,7 +41,7 @@ export default function Resources() {
               </Link>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <Image src="/images/landing/insights2.svg" alt="Error"/>
+                <Image src="/images/landing/insights2.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   5 Traits CEO and Astronauts Share
                 </p>
@@ -51,7 +52,7 @@ export default function Resources() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <Image src="/images/landing/insights3.svg" alt="Error"/>
+                <Image src="/images/landing/insights3.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   Performance Reviews: A Dreaded or Welcome Return?
                 </p>
@@ -65,7 +66,7 @@ export default function Resources() {
                 className={style.insightsCard}
                 style={{backgroundColor:"#EBEEF2"}}
               >
-                <Image src="/images/landing/insights1.svg" alt="Error"/>
+                <Image src="/images/landing/insights1.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   In UK Retail, a Surge in Female CEOs
                 </p>
@@ -76,7 +77,7 @@ export default function Resources() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <Image src="/images/landing/insights2.svg" alt="Error"/>
+                <Image src="/images/landing/insights2.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   5 Traits CEO and Astronauts Share
                 </p>
@@ -87,7 +88,7 @@ export default function Resources() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <Image src="/images/landing/insights3.svg" alt="Error"/>
+                <Image src="/images/landing/insights3.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
                   Performance Reviews: A Dreaded or Welcome Return?
                 </p>
@@ -102,64 +103,7 @@ export default function Resources() {
         </div>
 
         {/*Footer */}
-        <div className={style.footerContainer}>
-          <div className={style.footerWrapper}>
-              <div className={style.footerContents}>
-                <div className={style.whiteContainer}>
-                  <Image src="/images/landing/white_logo.svg" alt="Error"/>
-                  <p className={style.footerHeading}>Leaders Access</p>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-              </div>
-              <div className={style.copyRight}>
-                <p>Copyright © 2024 Leaders Access</p>
-                <div className={style.terms}>
-                  <p>Privacy Policy</p>
-                  <p>Terms & Conditions</p>
-                  <p>Disclaimer</p>
-                </div>
-              </div>
-          </div>
-        </div>
+        <Footer/>
 
       </div>
     </div>

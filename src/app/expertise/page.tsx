@@ -4,6 +4,7 @@ import aboutStyle from "../../styles/about.module.css";
 import expertStyle from "../../styles/expertise.module.css";
 import Navbar from "@/components/navbar/page";
 import Image from "next/image";
+import Footer from "@/components/footer/page";
 
 export default function Expertise() {
   return (
@@ -29,20 +30,20 @@ export default function Expertise() {
           </div>
           <div className={expertStyle.expertTechCards}>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Software Services</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IT Services</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Hardware, Storage &
                   Peripherals</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IOT & Embedded Technologies</p>
               </div>
           </div>
@@ -55,27 +56,27 @@ export default function Expertise() {
           </div>
           <div className={expertStyle.expertTechCards}>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Banks</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Fin-tech</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>NBFC</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Insurance</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Asset Management</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Capital Markets</p>
               </div>
           </div>
@@ -88,37 +89,37 @@ export default function Expertise() {
           </div>
           <div className={expertStyle.expertTechCards}>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Logistics & Retail </p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IT Services</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Hardware, Storage &
                   Peripherals</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IOT & Embedded Technologies</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Software Services</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IT Services</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Hardware, Storage &
                   Peripherals</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IOT & Embedded Technologies</p>
               </div>
           </div>
@@ -131,29 +132,29 @@ export default function Expertise() {
           </div>
           <div className={expertStyle.expertTechCards}>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Software Services</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IT Services</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Hardware, Storage &
                   Peripherals</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IOT & Embedded Technologies</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>Hardware, Storage &
                   Peripherals</p>
               </div>
               <div className={expertStyle.expertTechCard}>
-                <Image src="/images/landing/next.svg" alt="Error"/>
+                <Image src="/images/landing/next.svg" alt="Error" width={400} height={300}/>
                 <p>IOT & Embedded Technologies</p>
               </div>
           </div>
@@ -165,17 +166,18 @@ export default function Expertise() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Positions We Are Hiring </p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className=""  alt="Error"/>
-                <Image src="/images/landing/rightArrow.svg" className=""  alt="Error"/>
+                <Image src="/images/landing/leftArrow.svg" className=""  alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/rightArrow.svg" className=""  alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.positions}>
               <Image
                 src="/images/landing/posi_manager.svg"
                 className={style.positionsImage} alt="Error"
+                width={400} height={300}
               />
-              <Image src="/images/landing/posi_chief.svg" className=""  alt="Error"/>
-              <Image src="/images/landing/posi_tech.svg" className=""  alt="Error"/>
+              <Image src="/images/landing/posi_chief.svg" className=""  alt="Error"width={400} height={300}/>
+              <Image src="/images/landing/posi_tech.svg" className=""  alt="Error"width={400} height={300}/>
             </div>
             <div className={style.buttonContainer}>
               <p className={style.positionsView}>View All</p>
@@ -184,64 +186,7 @@ export default function Expertise() {
         </div>
 
         {/*Footer */}
-        <div className={style.footerContainer}>
-          <div className={style.footerWrapper}>
-              <div className={style.footerContents}>
-                <div className={style.whiteContainer}>
-                  <Image src="/images/landing/white_logo.svg" alt="Error"/>
-                  <p className={style.footerHeading}>Leaders Access</p>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-              </div>
-              <div className={style.copyRight}>
-                <p>Copyright © 2024 Leaders Access</p>
-                <div className={style.terms}>
-                  <p>Privacy Policy</p>
-                  <p>Terms & Conditions</p>
-                  <p>Disclaimer</p>
-                </div>
-              </div>
-          </div>
-        </div>
+        <Footer/>
 
 
       </div>

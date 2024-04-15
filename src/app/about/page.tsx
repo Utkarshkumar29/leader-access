@@ -4,6 +4,7 @@ import aboutStyle from "../../styles/about.module.css";
 import Navbar from "@/components/navbar/page";
 import resourceStyle from "../../styles/resource.module.css";
 import Footer from "@/components/footer/page";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -26,7 +27,7 @@ export default function About() {
                 <p className={style.partnerHeading}>Our Introduction</p>
             </div>
             <div className={aboutStyle.introDescription}>
-                <img src="/images/about/intro_main.svg" alt="Error" className={aboutStyle.introImage}/>
+                <Image src="/images/about/intro_main.svg" alt="Error" className={aboutStyle.introImage} width={1000} height={1000}/>
                 <p className={aboutStyle.description}>Welcome to Leaders Access, where talent meets opportunity. We are a leading executive search and talent advisory firm dedicated to helping organizations identify, attract, and retain top-tier talent that drives business success and innovation. With a commitment to excellence and a client-centric approach, we leverage our expertise, industry insights, and extensive network to deliver tailored solutions that exceed expectations. At Leaders Access, we believe that talent is the cornerstone of organizational success, and we are passionate about helping our clients build high-performing teams that fuel growth and achieve their strategic objectives.
                 </p>        
             </div>  
@@ -40,7 +41,7 @@ export default function About() {
             <div className={aboutStyle.whyChooseUs}>
                 <div className={aboutStyle.chooseBlueCard}>
                     <div className={aboutStyle.chooseImgWrapper}>
-                        <img src="/images/about/choose.svg"/>
+                        <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
                     </div>
                     <div>
                         <p>Unique Approach</p>
@@ -49,7 +50,7 @@ export default function About() {
                 </div>
                 <div className={aboutStyle.commonBlueCard}>
                     <div className={aboutStyle.chooseImgWrapper}>
-                        <img src="/images/about/choose.svg"/>
+                        <Image src="/images/about/choose.svg"alt="Error" width={400} height={300}/>
                     </div>
                     <div>
                         <p>Client Success</p>
@@ -58,7 +59,7 @@ export default function About() {
                 </div>
                 <div className={aboutStyle.commonBlueCard}>
                     <div className={aboutStyle.chooseImgWrapper}>
-                        <img src="/images/about/choose.svg"/>
+                        <Image src="/images/about/choose.svg"alt="Error" width={400} height={300}/>
                     </div>
                     <div>
                         <p>Unique Approach</p>
@@ -81,16 +82,16 @@ export default function About() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Partners</p>
               <div className={style.arrowContainer}>
-                <img src="/images/landing/leftArrow.svg" className="" />
-                <img src="/images/landing/rightArrow.svg" className="" />
+              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.partnerLogos}>
-              <img src="/images/landing/birla.svg" alt="" className={style.heroImage}/>
-              <img src="/images/landing/cred.svg" alt="" />
-              <img src="/images/landing/paytm.svg" alt="" />
-              <img src="/images/landing/payU.svg" alt="" />
-              <img src="/images/landing/zopper.svg" alt="" />
+            <Image src="/images/landing/birla.svg" alt="Error" className={style.heroImage} width={200} height={150}/>
+              <Image src="/images/landing/cred.svg" alt="Error" width={200} height={150}/>
+              <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={150}/>
+              <Image src="/images/landing/payU.svg" alt="Error" width={200} height={150}/>
+              <Image src="/images/landing/zopper.svg" alt="Error" width={200} height={150}/>
             </div>
           </div>
         </div>
@@ -101,14 +102,14 @@ export default function About() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Client Testimonials</p>
               <div className={style.arrowContainer}>
-                <img src="/images/landing/leftArrow.svg" className="" />
-                <img src="/images/landing/rightArrow.svg" className="" />
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/rightArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.positions}>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg" width={20} height={20} alt="Error"/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -122,7 +123,7 @@ export default function About() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -136,7 +137,7 @@ export default function About() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut

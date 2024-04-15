@@ -8,7 +8,7 @@ export default function Footer(){
             <div className={style.footerWrapper}>
                 <div className={style.footerContents}>
                     <div className={style.whiteContainer}>
-                        <Image src="/images/landing/white_logo.svg" alt="Error"/>
+                        <Image src="/images/landing/white_logo.svg" alt="Error" width={40} height={40}/>
                         <p className={style.footerHeading}>Leaders Access</p>
                     </div>
                     <div className={style.linksWrapper}>

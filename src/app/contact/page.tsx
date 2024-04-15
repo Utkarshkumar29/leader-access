@@ -24,21 +24,21 @@ export default function Contact() {
               <div className={style.partnerHeading}>Contact US</div>
               <div className={contactStyle.contactNumber}>
                 <div className={contactStyle.logo}>
-                  <Image src="/images/landing/Vector.svg" alt="Error"/>
+                  <Image src="/images/landing/Vector.svg" alt="Error" width={40} height={30}/> 
                 </div>
                 <p className={contactStyle.field}>Phone Number</p>
                 <p className={contactStyle.value}>123467890</p>
               </div>
               <div>
                 <div className={contactStyle.logo}>
-                  <Image src="/images/landing/Vector.svg" alt="Error"/>
+                  <Image src="/images/landing/Vector.svg" alt="Error" width={40} height={30}/>
                 </div>
                 <p className={contactStyle.field}>Phone Number</p>
                 <p className={contactStyle.value}>XYZ</p>
               </div>
               <div>
                 <div className={contactStyle.logo}>
-                  <Image src="/images/landing/Vector.svg" alt="Error"/>
+                  <Image src="/images/landing/Vector.svg" alt="Error" width={40} height={30}/>
                 </div>
                 <p className={contactStyle.field}>Address</p>
                 <p className={contactStyle.value}>XYZ</p>

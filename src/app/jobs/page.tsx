@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/page"
 import style from "../../styles/leader.module.css"
 import jobsStyle from "../../styles/jobs.module.css";
 import Image from "next/image";
+import Footer from "@/components/footer/page";
 
 export default function Jobs(){
     return(
@@ -50,75 +51,18 @@ export default function Jobs(){
                         <p className={style.partnerHeading}>Positions We Are Hiring </p>
                         </div>
                         <div className={style.positions}>
-                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error"/>
-                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error"/>
-                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error"/>
-                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error"/>
-                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error"/>
-                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error"/>
+                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error" width={400} height={300}/>
+                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error" width={400} height={300}/>
+                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error" width={400} height={300}/>
+                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error" width={400} height={300}/>
+                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error" width={400} height={300}/>
+                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error" width={400} height={300}/>
                         </div>
                     </div>
                 </div>
 
                 {/*Footer */}
-        <div className={style.footerContainer}>
-          <div className={style.footerWrapper}>
-              <div className={style.footerContents}>
-                <div className={style.whiteContainer}>
-                  <Image src="/images/landing/white_logo.svg" alt="Error"/>
-                  <p className={style.footerHeading}>Leaders Access</p>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-              </div>
-              <div className={style.copyRight}>
-                <p>Copyright © 2024 Leaders Access</p>
-                <div className={style.terms}>
-                  <p>Privacy Policy</p>
-                  <p>Terms & Conditions</p>
-                  <p>Disclaimer</p>
-                </div>
-              </div>
-          </div>
-        </div>
+        <Footer/>
 
             </div>
         </div>

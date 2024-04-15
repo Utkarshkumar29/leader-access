@@ -6,7 +6,7 @@ export default function Navbar(){
     return(
         <div className={style.navbar_container}>
           <div className={style.navbar_logo}>
-            <Image src="/images/landing/logo.svg" alt="Error"/>
+          <Image src="/images/landing/logo.svg" alt="Error" width={120} height={64}/>
             <p className={style.nav_heading}>Leaders Access</p>
           </div>
           <div className={style.navButtons}>
@@ -17,19 +17,19 @@ export default function Navbar(){
             <div className={style.downContainer}>
               <Link href="/service">
                 <p className={style.navButton}>Services</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
+                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
               </Link>
             </div>
             <div className={style.downContainer}>
             <Link href="/expertise">
               <p className={style.navButton}>Expertise</p>
-              <Image src="/images/landing/DownArrow.svg"alt="Error" />
+              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
             </Link>
             </div>
             <div className={style.downContainer}>
               <Link href="/resources">
               <p className={style.navButton}>Resources</p>
-              <Image src="/images/landing/DownArrow.svg"alt="Error" />
+              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
               </Link>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function Navbar(){
             <Link href="/jobs">
             <div className={style.joinContainer}>
               <p className={style.joinButton}>Jobs</p>
-              <Image src="/images/landing/DownArrow.svg" alt="Error"/>
+              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
             </div>
             </Link>
             <Link href="/contact">

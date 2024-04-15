@@ -4,6 +4,7 @@ import aboutStyle from "../../styles/about.module.css";
 import Navbar from "@/components/navbar/page";
 import resourceStyle from "../../styles/resource.module.css";
 import Image from "next/image";
+import Footer from "@/components/footer/page";
 
 export default function Service() {
   return (
@@ -32,6 +33,8 @@ export default function Service() {
               src="/images/about/intro_main.svg"
               alt="Error"
               className={aboutStyle.introImage}
+              width={20}
+              height={20}
             />
             <p className={aboutStyle.description}>
               Welcome to Leaders Access, where talent meets opportunity. We are
@@ -57,7 +60,7 @@ export default function Service() {
           <div className={aboutStyle.whyChooseUs}>
             <div className={aboutStyle.commonBlueCard}>
               <div className={aboutStyle.chooseImageWrapper}>
-                <Image src="/images/about/choose.svg" alt="Error"/>
+                <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
               </div>
               <div>
                 <p>Unique Approach</p>
@@ -70,7 +73,7 @@ export default function Service() {
             </div>
             <div className={aboutStyle.commonBlueCard}>
               <div className={aboutStyle.chooseImageWrapper}>
-                <Image src="/images/about/choose.svg" alt="Error"/>
+                <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
               </div>
               <div>
                 <p>Client Success</p>
@@ -83,7 +86,7 @@ export default function Service() {
             </div>
             <div className={aboutStyle.commonBlueCard}>
               <div className={aboutStyle.chooseImageWrapper}>
-                <Image src="/images/about/choose.svg" alt="Error"/>
+                <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
               </div>
               <div>
                 <p>Unique Approach</p>
@@ -103,15 +106,15 @@ export default function Service() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Search Process</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
                 <p>1/12</p>
-                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/rightArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.ourApproachCardWrapper}>
               <div className={style.approachCardOne}>
                 <div className={style.frame}>
-                  <Image src="/images/landing/Frame 1.svg" alt="Error"/>
+                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.approachCardHeading}>
                   Alignment with Organizational Goals
@@ -127,7 +130,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -143,7 +146,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -159,7 +162,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -175,7 +178,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -191,7 +194,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -207,7 +210,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -223,7 +226,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300} />
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -239,7 +242,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -255,7 +258,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -271,7 +274,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -287,7 +290,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -306,64 +309,7 @@ export default function Service() {
         </div>
 
         {/*Footer */}
-        <div className={style.footerContainer}>
-          <div className={style.footerWrapper}>
-            <div className={style.footerContents}>
-              <div className={style.whiteContainer}>
-                <Image src="/images/landing/white_logo.svg" />
-                <p className={style.footerHeading}>Leaders Access</p>
-              </div>
-              <div className={style.topicsContainer}>
-                <p className={style.topicsHeading}>Pages</p>
-                <div className={style.topics}>
-                  <p>Home</p>
-                  <p>About</p>
-                  <p>Insights</p>
-                  <p>Case Studies</p>
-                  <p>Contact</p>
-                </div>
-              </div>
-              <div className={style.topicsContainer}>
-                <p className={style.topicsHeading}>Pages</p>
-                <div className={style.topics}>
-                  <p>Home</p>
-                  <p>About</p>
-                  <p>Insights</p>
-                  <p>Case Studies</p>
-                  <p>Contact</p>
-                </div>
-              </div>
-              <div className={style.topicsContainer}>
-                <p className={style.topicsHeading}>Pages</p>
-                <div className={style.topics}>
-                  <p>Home</p>
-                  <p>About</p>
-                  <p>Insights</p>
-                  <p>Case Studies</p>
-                  <p>Contact</p>
-                </div>
-              </div>
-              <div className={style.topicsContainer}>
-                <p className={style.topicsHeading}>Pages</p>
-                <div className={style.topics}>
-                  <p>Home</p>
-                  <p>About</p>
-                  <p>Insights</p>
-                  <p>Case Studies</p>
-                  <p>Contact</p>
-                </div>
-              </div>
-            </div>
-            <div className={style.copyRight}>
-              <p>Copyright © 2024 Leaders Access</p>
-              <div className={style.terms}>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-                <p>Disclaimer</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer/>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ export default function ViewAll() {
         {/*Navbar */}
         <div className={style.navbar_container}>
           <div className={style.navbar_logo}>
-            <Image src="/images/landing/logo.svg" alt="Error"/>
+            <Image src="/images/landing/logo.svg" alt="Error" width={120} height={64}/>
             <p className={style.nav_heading}>Leaders Access</p>
           </div>
           <div className={style.navButtons}>
@@ -41,26 +41,26 @@ export default function ViewAll() {
             <div className={style.downContainer}>
               <Link href="/service">
                 <p className={style.navButton}>Services</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
+                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
               </Link>
             </div>
             <div className={style.downContainer}>
               <Link href="/expertise">
                 <p className={style.navButton}>Expertise</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
+                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
               </Link>
             </div>
             <div className={style.downContainer}>
               <Link href="/resources">
                 <p className={style.navButton}>Resources</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
+                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
               </Link>
             </div>
           </div>
           <div className={style.nav_contact}>
             <div className={style.joinContainer}>
               <p className={style.joinButton}>Jobs</p>
-              <Image src="/images/landing/DownArrow.svg" alt="Error"/>
+              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
             </div>
             <p className={style.contactButton}>Contact</p>
           </div>
@@ -79,7 +79,7 @@ export default function ViewAll() {
             <div className={style.positions}>
               <div className={style.clientCard} onClick={handleReadMoreClick}>
                 <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg"alt="Error" />
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={20} height={20} />
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -93,7 +93,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -107,7 +107,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg"alt="Error" />
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -121,7 +121,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -135,7 +135,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -149,7 +149,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
