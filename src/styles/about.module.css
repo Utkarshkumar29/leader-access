@@ -74,7 +74,7 @@
   
   .introDescription {
     display: flex;
-    gap: 50px; /* Keep the initial gap between elements */
+    gap: 50px;
   }
   
   .introImage {
@@ -88,15 +88,14 @@
     line-height: 1.5;
   }
   
-  /* Media Queries for Responsive Layout */
   @media only screen and (max-width: 768px) {
     .intro {
       padding: 8vw;
     }
   
     .introDescription {
-      flex-direction: column; /* Change to column layout for smaller screens */
-      gap: 20px; /* Reduce gap between elements */
+      flex-direction: column; 
+      gap: 20px; 
     }
     
     .description {
