@@ -84,6 +84,7 @@ export default function Insights() {
                   tell employers whether people can fundamentally do the job,”
                   he says.
                 </p>
+              </div>
               <div>
                 <p>
                   Herdsman says it&apos;s important for women to have so-called
