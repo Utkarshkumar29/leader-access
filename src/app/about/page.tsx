@@ -41,7 +41,7 @@ export default function About() {
             <div className={aboutStyle.whyChooseUs}>
                 <div className={aboutStyle.chooseBlueCard}>
                     <div className={aboutStyle.chooseImgWrapper}>
-                        <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
+                        <Image src="/images/about/choose.svg" alt="Error" width={50} height={50}/>
                     </div>
                     <div>
                         <p>Unique Approach</p>
@@ -50,7 +50,7 @@ export default function About() {
                 </div>
                 <div className={aboutStyle.commonBlueCard}>
                     <div className={aboutStyle.chooseImgWrapper}>
-                        <Image src="/images/about/choose.svg"alt="Error" width={400} height={300}/>
+                        <Image src="/images/about/choose.svg"alt="Error" width={50} height={50}/>
                     </div>
                     <div>
                         <p>Client Success</p>
@@ -59,7 +59,7 @@ export default function About() {
                 </div>
                 <div className={aboutStyle.commonBlueCard}>
                     <div className={aboutStyle.chooseImgWrapper}>
-                        <Image src="/images/about/choose.svg"alt="Error" width={400} height={300}/>
+                        <Image src="/images/about/choose.svg"alt="Error" width={50} height={50}/>
                     </div>
                     <div>
                         <p>Unique Approach</p>
