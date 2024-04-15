@@ -31,8 +31,8 @@ export default function Service() {
               alt="Error"
               className={aboutStyle.introImage}
               layout="responsive"
-              width={500} // Set a placeholder width (can be any value)
-      height={500}
+              width={500}
+              height={500}
             />
             <p className={aboutStyle.description}>
               Welcome to Leaders Access, where talent meets opportunity. We are

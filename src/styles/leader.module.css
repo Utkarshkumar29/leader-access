@@ -108,7 +108,7 @@
   }
   
   .imageWrapper {
-    margin: 20px;
+    margin: 20px
   }
   
   .heroImage {
@@ -116,6 +116,13 @@
     height: 100%;
     object-fit: cover;  
   }
+
+@media (max-width:768px) {
+    .imageWrapper{
+        padding: 00px;
+        margin: 5px;
+    }
+}
 
 @media (max-width: 767px) {
     .heroImage {

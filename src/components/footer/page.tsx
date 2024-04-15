@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "../../styles/leader.module.css";
+import style from "../../styles/footer.module.css";
 import Image from "next/image";
 
 export default function Footer(){
