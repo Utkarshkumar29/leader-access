@@ -116,8 +116,8 @@ export default function Home() {
           <div className={style.industryWrapper}>
             <p className={style.partnerHeading}>Industries We Serve</p>
             <div className={style.industriesCards}>
-              <div>
-                <Image src="/images/landing/industry1.svg" alt="Error" width={400} height={300}/>
+              <div className={style.box}>
+                <Image src="/images/landing/smiling.svg" alt="Error" width={315} height={500}/>
                 <div className={style.industriesCount}>
                   <p>30+ Industries</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

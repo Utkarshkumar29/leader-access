@@ -81,8 +81,10 @@
     align-items: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .navButtons,.nav_contact{
         display: none;
     }
 }
+
+

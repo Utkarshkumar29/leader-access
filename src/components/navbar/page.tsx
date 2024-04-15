@@ -4,6 +4,7 @@ import Image from "next/image"
 
 export default function Navbar(){
     return(
+      <>
         <div className={style.navbar_container}>
           <div className={style.navbar_logo}>
           <Image src="/images/landing/logo.svg" alt="Error" width={120} height={64}/>
@@ -45,5 +46,8 @@ export default function Navbar(){
             </Link>
           </div>
         </div>
+
+
+      </>
     )
 }

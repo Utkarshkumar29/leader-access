@@ -37,13 +37,13 @@ export default function Jobs(){
 
                 <div className={jobsStyle.submitCvContainer}>
                     <div className={jobsStyle.submitCvWrapper}>
-                    <div className={jobsStyle.submitText}>
-                        <p>Due to client confidentiality, we do not publish all the jobs we are currently working on.</p>
-                        <p>If you cannot find a relevant opportunity by browsing our jobs, please send us your details by clicking here.</p>
-                    </div>
-                    <div className={jobsStyle.submitCV}>
-                        <Link href="/jobs/cv"><p>Submit Your CV</p></Link>
-                    </div>
+                        <div className={jobsStyle.submitText}>
+                            <p>Due to client confidentiality, we do not publish all the jobs we are currently working on.</p>
+                            <p>If you cannot find a relevant opportunity by browsing our jobs, please send us your details by clicking here.</p>
+                        </div>
+                        <div className={jobsStyle.submitCV}>
+                            <Link href="/jobs/cv"><p>Submit Your CV</p></Link>
+                        </div>
                     </div>
                 </div>
 

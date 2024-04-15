@@ -426,7 +426,7 @@
 
 .industriesCards {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     gap: 70px;
 }
 
@@ -516,6 +516,83 @@
         padding: 40px; /* Adjust padding for smaller screens */
     }
 }
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .industryWrapper {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .industriesCards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .box{
+        display: flex;
+        padding: 30px;
+    }
+
+    .lineSeparator {
+        top: 0px; /* Adjust position of line separator */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .industryScroll {
+        height: 300px;
+        max-height: 300px; /* Limit maximum height for better mobile experience */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .industryScroll p{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .scrollHeading {
+        font-size: 24px; /* Adjust heading font size for smaller screens */
+    }
+
+    .industriesCount {
+        max-width: 100%; /* Ensure industries count card fills the width */
+        text-align: center; /* Center align text */
+        padding: 20px; /* Adjust padding */
+        display: flex; /* Use flexbox to align content */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .industriesCount p {
+        margin: 0; /* Remove default margin */
+    }
+
+    .industriesCount p:first-child {
+        font-size: 24px; /* Adjust font size for count */
+        font-weight: 600; /* Bold font for count */
+    }
+
+    .industriesCount p:last-child {
+        margin-top: 10px; /* Add margin between count and description */
+    }
+
+    .box {
+        display: flex; /* Use flexbox to align items */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        gap: 20px; /* Add gap between items */
+    }
+
+    .box img {
+        width: 100%; /* Make image fill container width */
+        max-width: 100%; /* Ensure image does not exceed container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 
 
 /*Approach*/
@@ -1008,8 +1085,7 @@
     .approachCardOne {
         flex-grow: 1; /* Make the card grow to fill the available space */
         max-width: none; /* Reset max-width */
-        margin: 10px; /* Add margin for spacing */
-        background-color: red; /* Just for visualization, remove this line in your final version */
+        margin: 10px;
         max-width: 200px;
     }
 

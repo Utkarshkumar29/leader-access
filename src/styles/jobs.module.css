@@ -104,6 +104,9 @@
     gap: 8px;
     border-radius: 12px;
     opacity: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .submitCV p{
@@ -127,6 +130,12 @@
     .submitText{
         padding-left: 0px;
         text-align: center;
+    }
+
+    .submitCvWrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
