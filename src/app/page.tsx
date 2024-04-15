@@ -17,13 +17,15 @@ export default function Home() {
 
         {/*Hero Section */}
         <div className={style.heroImageContainer}>
-        <Image
-          src="/images/landing/hero_section.svg"
-          className={style.heroImage} // Add a new class to make the image full width
-          alt="Error"
-          width={0}
-          height={500}
-        />
+          <div className={style.imageWrapper}>
+            <Image
+              src="/images/landing/hero_section.svg"
+              alt="Error"
+              className={style.heroImage}
+              width={1084}
+              height={720}
+            />
+          </div>
         </div>
 
         {/*Partners*/}
@@ -32,12 +34,12 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Partners</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={10} height={10}/>
+                <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={10} height={10}/>
               </div>
             </div>
             <div className={style.partnerLogos}>
-              <Image src="/images/landing/birla.svg" alt="Error" className={style.heroImage} width={200} height={150}/>
+              <Image src="/images/landing/birla.svg" alt="Error" width={200} height={150}/>
               <Image src="/images/landing/cred.svg" alt="Error" width={200} height={150}/>
               <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={150}/>
               <Image src="/images/landing/payU.svg" alt="Error" width={200} height={150}/>
@@ -53,7 +55,7 @@ export default function Home() {
               <p className={style.partnerHeading}>Positions We Are Hiring </p>
               <div className={style.arrowContainer}>
               <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
-              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+              <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.positions}>
@@ -152,13 +154,13 @@ export default function Home() {
               <div className={style.arrowContainer}>
               <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
                 <p>1/12</p>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.ourApproachCardWrapper}>
               <div className={style.approachCardOne}>
                 <div className={style.frame}>
-                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.approachCardHeading}>
                   Alignment with Organizational Goals
@@ -174,7 +176,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -190,7 +192,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -206,7 +208,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -222,7 +224,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -238,7 +240,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -254,7 +256,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -270,7 +272,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -286,7 +288,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -302,7 +304,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -318,7 +320,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -334,7 +336,7 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -359,13 +361,13 @@ export default function Home() {
               <p className={style.partnerHeading}>Client Testimonials</p>
               <div className={style.arrowContainer}>
                 <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.scrollCardWrapper}>
               <div className={style.clientCard}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -379,7 +381,7 @@ export default function Home() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -393,7 +395,7 @@ export default function Home() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut

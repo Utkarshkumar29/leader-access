@@ -15,10 +15,7 @@ export default function Service() {
 
         <div className={resourceStyle.container}>
           <div className={resourceStyle.wrapper}>
-          <p>
-            Identify, attract, and retain top-tier executives who drive business
-            success and innovation.
-          </p>
+          <p>Executive Search</p>
           <p>
             Identify, attract, and retain top-tier executives who drive business
             success and innovation.
@@ -33,8 +30,9 @@ export default function Service() {
               src="/images/about/intro_main.svg"
               alt="Error"
               className={aboutStyle.introImage}
-              width={20}
-              height={20}
+              layout="responsive"
+              width={500} // Set a placeholder width (can be any value)
+      height={500}
             />
             <p className={aboutStyle.description}>
               Welcome to Leaders Access, where talent meets opportunity. We are

@@ -27,9 +27,16 @@
     }
 }
 
-.wrapper p{
+.wrapper p:nth-child(1){
     color: white;
     font-size: 64px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.wrapper p:nth-child(2){
+    color: white;
+    font-size: 34px;
     font-weight: 600;
     text-align: left;
 }
