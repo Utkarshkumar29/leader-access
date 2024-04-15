@@ -205,12 +205,6 @@
     flex-wrap: wrap;
 }
 
-.partnerLogos img {
-    max-width: 230px;
-    width: 100%;
-    overflow: hidden;
-}
-
 /* Media Queries */
 
 @media (max-width: 800px) {
@@ -512,11 +506,6 @@
 
 .industryScroll::-webkit-scrollbar-thumb {
     background-color: #052761;
-}
-
-.industriesCards img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Media Queries */
