@@ -6,7 +6,6 @@ import expertStyle from "../../styles/expertise.module.css";
 import viewStyle from "../../styles/viewAll.module.css";
 import { useState } from "react";
 import { Fragment } from 'react';
-import { Transition  } from 'react-transition-group';
 import { Dialog } from '@headlessui/react';
 import Image from "next/image";
 
@@ -166,7 +165,7 @@ export default function ViewAll() {
         </div>
 
         {/* Integration of provided HTML structure */}
-        <Transition.Root show={isModalOpen} as={Fragment}>
+        {/*<Transition.Root show={isModalOpen} as={Fragment}>
           <Dialog
             as="div"
             className="fixed inset-0 z-30 overflow-y-auto"
@@ -182,7 +181,7 @@ export default function ViewAll() {
               <button onClick={handleCloseModal}>Close</button>
             </div>
           </Dialog>
-        </Transition.Root>
+  </Transition.Root>*/}
 
 
       </div>
