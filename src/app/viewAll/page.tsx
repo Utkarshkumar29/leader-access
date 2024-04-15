@@ -5,8 +5,8 @@ import aboutStyle from "../../styles/about.module.css";
 import expertStyle from "../../styles/expertise.module.css";
 import viewStyle from "../../styles/viewAll.module.css";
 import { useState } from "react";
-import { Fragment } from 'react';
-import { Dialog } from '@headlessui/react';
+//import { Fragment } from 'react';
+//import { Dialog } from '@headlessui/react';
 import Image from "next/image";
 
 
