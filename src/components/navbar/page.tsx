@@ -10,24 +10,26 @@ export default function Navbar(){
           <Image src="/images/landing/logo.svg" alt="Error" width={120} height={64}/>
             <p className={style.nav_heading}>Leaders Access</p>
           </div>
-          <div className={style.navButtons}>
+          <div className={style.navButtons} >
+            <Link href="/" legacyBehavior>
             <p className={style.navButton}>Home</p>
-              <Link href="/about">
-                <p className={style.navButton}>About</p>
+            </Link>
+              <Link href="/about" legacyBehavior>
+                <p className={style.navButton} >About</p>
               </Link>
-            <Link href="/service">
+            <Link href="/service" legacyBehavior>
             <div className={style.downContainer}>
                 <p className={style.navButton}>Services</p>
                 <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={10} style={{paddingTop:"25px"}}/>
             </div>
             </Link>
-            <Link href="/expertise">
+            <Link href="/expertise" legacyBehavior>
             <div className={style.downContainer}>
               <p className={style.navButton}>Expertise</p>
               <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={10} style={{paddingTop:"25px"}}/>
             </div>
             </Link>
-              <Link href="/resources">
+              <Link href="/resources" legacyBehavior>
             <div className={style.downContainer}>
               <p className={style.navButton}>Resources</p>
               <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={10} style={{paddingTop:"25px"}}/>
@@ -35,13 +37,13 @@ export default function Navbar(){
               </Link>
           </div>
           <div className={style.nav_contact}>
-            <Link href="/jobs">
+            <Link href="/jobs" legacyBehavior>
             <div className={style.joinContainer}>
               <p className={style.joinButton}>Jobs</p>
               <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
             </div>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" legacyBehavior>
               <p className={style.contactButton}>Contact</p>
             </Link>
           </div>
