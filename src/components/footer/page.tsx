@@ -1,4 +1,3 @@
-import React from "react";
 import style from "../../styles/footer.module.css";
 import Image from "next/image";
 
@@ -8,7 +7,7 @@ export default function Footer(){
             <div className={style.footerWrapper}>
                 <div className={style.footerContents}>
                     <div className={style.whiteContainer}>
-                        <Image src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="Error" width={40} height={40}/>
+                        <Image src="/images/landing/white_logo.svg" alt="Error" width={40} height={40}/>
                         <p className={style.footerHeading}>Leaders Access</p>
                     </div>
                     <div className={style.linksWrapper}>
