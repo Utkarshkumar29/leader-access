@@ -87,7 +87,6 @@ export default function Home() {
                   Identify, attract, and retain top-tier executives who drive
                   business success and innovation.
                 </p>
-                {isHovered && <p className={style.positionsView}>View All</p>}
               </div>
               <div className={style.serviceCard}>
                 <Image src="/images/landing/service3.svg" alt="Error" width={400} height={300}/>
@@ -96,7 +95,6 @@ export default function Home() {
                   Identify, attract, and retain top-tier executives who drive
                   business success and innovation.
                 </p>
-                {isHovered && <p className={style.positionsView}>View All</p>}
               </div>
             </div>
           </div>
