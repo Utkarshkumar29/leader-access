@@ -34,8 +34,8 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Partners</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={10} height={10}/>
-                <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={10} height={10}/>
+                <Image src="/images/landing/leftArrow.svg" alt="Error" width={10} height={10}/>
+                <Image src="/images/landing/RightArrow.svg" alt="Error" width={10} height={10}/>
               </div>
             </div>
             <div className={style.partnerLogos}>
@@ -54,14 +54,14 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Positions We Are Hiring </p>
               <div className={style.arrowContainer}>
-              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
-              <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={20} height={20}/>
+              <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20}/>
+              <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.positions}>
               <Image src="/images/landing/posi_manager.svg" alt="error" width={400} height={300}/>
-              <Image src="/images/landing/posi_chief.svg" className="" alt="Errro" width={400} height={300}/>
-              <Image src="/images/landing/posi_tech.svg" className="" alt="Error" width={400} height={300}/>
+              <Image src="/images/landing/posi_chief.svg" alt="Errro" width={400} height={300}/>
+              <Image src="/images/landing/posi_tech.svg" alt="Error" width={400} height={300}/>
             </div>
             <div className={style.buttonContainer}>
               <p className={style.positionsView}>View All</p>
@@ -152,9 +152,9 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Unique Approach</p>
               <div className={style.arrowContainer}>
-              <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
+              <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20}/>
                 <p>1/12</p>
-                <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.ourApproachCardWrapper}>
@@ -360,8 +360,8 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Client Testimonials</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
-                <Image src="/images/landing/RightArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20}/>
               </div>
             </div>
             <div className={style.scrollCardWrapper}>

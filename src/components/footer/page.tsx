@@ -1,7 +1,7 @@
 import footerStyle from "../../styles/footer.module.css";
 import Image from "next/image";
 
-export default function Footer(){
+export default function Footer() {
     return(
         <div className={footerStyle.footerContainer}>
             <div className={footerStyle.footerWrapper}>
