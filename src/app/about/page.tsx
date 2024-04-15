@@ -15,8 +15,8 @@ export default function About() {
         <Navbar/>
 
         {/*About Intro */}
-        <div className={aboutStyle.container}>
-          <div className={aboutStyle.wrapper}>
+        <div className={resourceStyle.container}>
+          <div className={resourceStyle.wrapper}>
             <p>Your Trusted Partner in Executive Search and Talent Advisory</p>
             <p>Empowering Organizations with Strategic Talent Solutions</p>
         </div></div>

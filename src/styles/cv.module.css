@@ -40,7 +40,6 @@ text-align: left;
 }
 
 .field{
-    width: 100%;
     padding: 24px;
     gap: 10px;
     border-radius: 12px ;
@@ -62,4 +61,17 @@ text-align: left;
     opacity: 0px;
     background-color: #052761;
     color: white;
+}
+
+@media (max-width:1024px) {
+    .cvWrapper{
+        padding: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .cvWrapper{
+        padding: 0px;
+        margin: 5px;
+    }
 }

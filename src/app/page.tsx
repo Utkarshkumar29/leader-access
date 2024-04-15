@@ -160,7 +160,7 @@ export default function Home() {
             <div className={style.ourApproachCardWrapper}>
               <div className={style.approachCardOne}>
                 <div className={style.frame}>
-                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={50} height={50} className={style.image}/>
                 </div>
                 <p className={style.approachCardHeading}>
                   Alignment with Organizational Goals

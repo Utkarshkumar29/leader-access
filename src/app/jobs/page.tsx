@@ -3,6 +3,7 @@ import style from "../../styles/leader.module.css"
 import jobsStyle from "../../styles/jobs.module.css";
 import Image from "next/image";
 import Footer from "@/components/footer/page";
+import Link from "next/link";
 
 export default function Jobs(){
     return(
@@ -35,12 +36,14 @@ export default function Jobs(){
                 </div>
 
                 <div className={jobsStyle.submitCvContainer}>
+                    <div className={jobsStyle.submitCvWrapper}>
                     <div className={jobsStyle.submitText}>
                         <p>Due to client confidentiality, we do not publish all the jobs we are currently working on.</p>
                         <p>If you cannot find a relevant opportunity by browsing our jobs, please send us your details by clicking here.</p>
                     </div>
                     <div className={jobsStyle.submitCV}>
-                        <p>Submit Your CV</p>
+                        <Link href="/jobs/cv"><p>Submit Your CV</p></Link>
+                    </div>
                     </div>
                 </div>
 

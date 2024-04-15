@@ -14,24 +14,24 @@ export default function Navbar(){
               <Link href="/about">
                 <p className={style.navButton}>About</p>
               </Link>
+            <Link href="/service">
             <div className={style.downContainer}>
-              <Link href="/service">
                 <p className={style.navButton}>Services</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
-              </Link>
+                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={10} style={{paddingTop:"25px"}}/>
             </div>
-            <div className={style.downContainer}>
-            <Link href="/expertise">
-              <p className={style.navButton}>Expertise</p>
-              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
             </Link>
-            </div>
+            <Link href="/expertise">
             <div className={style.downContainer}>
-              <Link href="/resources">
-              <p className={style.navButton}>Resources</p>
-              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
-              </Link>
+              <p className={style.navButton}>Expertise</p>
+              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={10} style={{paddingTop:"25px"}}/>
             </div>
+            </Link>
+              <Link href="/resources">
+            <div className={style.downContainer}>
+              <p className={style.navButton}>Resources</p>
+              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={10} style={{paddingTop:"25px"}}/>
+            </div>
+              </Link>
           </div>
           <div className={style.nav_contact}>
             <Link href="/jobs">

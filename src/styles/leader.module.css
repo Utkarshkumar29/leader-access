@@ -50,12 +50,19 @@
     text-align: left;
     gap: 30px;
 }
-
-.downContainer{
-    display: flex;
-    gap: 10px;
+.downContainer {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Align items vertically */
 }
 
+.navButton {
+    margin-right: 10px; /* Add margin to create space between text and image */
+}
+
+.downContainer p,
+.downContainer img {
+    vertical-align: middle; /* Align text and image vertically */
+}
 .nav_contact{
     display: flex;
     gap: 30px;
@@ -593,7 +600,7 @@
 }
 
 .approachCardOne,.commonCard ul {
-    list-style-type: disc; /* Set bullet points */
+    list-style-type: disc; 
   }
 
 .commontext{
@@ -1004,5 +1011,36 @@
     .whiteContainer img{
         width: 40px;
         height: 40px;
+    }
+}
+
+@media (max-width: 780px) {
+    .approachCardOne {
+        flex-grow: 1; /* Make the card grow to fill the available space */
+        max-width: none; /* Reset max-width */
+        margin: 10px; /* Add margin for spacing */
+        background-color: red; /* Just for visualization, remove this line in your final version */
+        max-width: 200px;
+    }
+
+    .frame{
+        background-color: white;
+        padding: 1px;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .image{
+        width: 25px;
+        height: 25px;
+    }
+
+    .approachCardHeading{
+        font-size: 15px;
     }
 }

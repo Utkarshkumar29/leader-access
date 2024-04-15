@@ -4,6 +4,7 @@ import aboutStyle from "../../styles/about.module.css";
 import expertStyle from "../../styles/expertise.module.css";
 import Navbar from "@/components/navbar/page";
 import Image from "next/image";
+import resourceStyle from "../../styles/resource.module.css";
 import Footer from "@/components/footer/page";
 
 export default function Expertise() {
@@ -14,8 +15,8 @@ export default function Expertise() {
         {/*Navbar */}
         <Navbar/>
 
-        <div className={aboutStyle.aboutContainer}>
-        <div className={aboutStyle.aboutIntro}>
+        <div className={resourceStyle.container}>
+          <div className={resourceStyle.wrapper}>
           <p>
           We Speak Your <br></br> Industry&apos;s Language
           </p>

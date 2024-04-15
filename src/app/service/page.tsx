@@ -20,7 +20,8 @@ export default function Service() {
             Identify, attract, and retain top-tier executives who drive business
             success and innovation.
           </p>
-        </div></div>
+          </div>
+        </div>
 
         {/*Intro */}
         <div className={aboutStyle.intro}>
@@ -51,50 +52,46 @@ export default function Service() {
         </div>
 
         {/*Choose */}
-        <div className={aboutStyle.intro}>
-          <div className={style.partnerHeadings}>
+        <div className={aboutStyle.chooseContainer}>
+          <div className={aboutStyle.chooseWrapper}>
+            <div className={style.partnerHeadings}>
             <p className={style.partnerHeading}>Key Benefits</p>
           </div>
           <div className={aboutStyle.whyChooseUs}>
             <div className={aboutStyle.commonBlueCard}>
               <div className={aboutStyle.chooseImageWrapper}>
-                <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
+                <Image src="/images/about/choose.svg" alt="Error" width={50} height={50}/>
               </div>
               <div>
-                <p>Unique Approach</p>
+                <p>Unlock Elite Executive Talent Network</p>
                 <p>
-                  We go beyond traditional search methods, leveraging
-                  cutting-edge technology and industry expertise to deliver
-                  unparalleled results.
+                Access top-tier executive talent via our vast network for organizational growth.
                 </p>
               </div>
             </div>
             <div className={aboutStyle.commonBlueCard}>
               <div className={aboutStyle.chooseImageWrapper}>
-                <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
+                <Image src="/images/about/choose.svg" alt="Error" width={50} height={50}/>
               </div>
               <div>
-                <p>Client Success</p>
+                <p>Thorough Candidate Screening</p>
                 <p>
-                  Our track record speaks for itself. With a proven history of
-                  successful placements and satisfied clients, we are the
-                  trusted partner you can count on.
+                Beyond resumes, our process delves deep into backgrounds and competencies, ensuring the right fit.
                 </p>
               </div>
             </div>
             <div className={aboutStyle.commonBlueCard}>
               <div className={aboutStyle.chooseImageWrapper}>
-                <Image src="/images/about/choose.svg" alt="Error" width={400} height={300}/>
+                <Image src="/images/about/choose.svg" alt="Error" width={50} height={50}/>
               </div>
               <div>
-                <p>Unique Approach</p>
+                <p>Smooth Onboarding</p>
                 <p>
-                  With a vast network spanning across regions and industries, we
-                  have the reach to connect you with top talent wherever they
-                  may be.
+                  Ensure executive success with seamless integration support.
                 </p>
               </div>
             </div>
+          </div>
           </div>
         </div>
 
@@ -112,7 +109,7 @@ export default function Service() {
             <div className={style.ourApproachCardWrapper}>
               <div className={style.approachCardOne}>
                 <div className={style.frame}>
-                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Frame 1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.approachCardHeading}>
                   Alignment with Organizational Goals
@@ -128,7 +125,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -144,7 +141,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -160,7 +157,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -176,7 +173,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -192,7 +189,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -208,7 +205,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -224,7 +221,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300} />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50} />
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -240,7 +237,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -256,7 +253,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -272,7 +269,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
@@ -288,7 +285,7 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={400} height={300}/>
+                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
