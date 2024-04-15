@@ -46,8 +46,6 @@ export default function Navbar(){
             </Link>
           </div>
         </div>
-
-
       </>
     )
 }

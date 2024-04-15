@@ -39,11 +39,11 @@ export default function Home() {
               </div>
             </div>
             <div className={style.partnerLogos}>
-              <Image src="/images/landing/birla.svg" alt="Error" width={200} height={150}/>
-              <Image src="/images/landing/cred.svg" alt="Error" width={200} height={150}/>
-              <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={150}/>
-              <Image src="/images/landing/payU.svg" alt="Error" width={200} height={150}/>
-              <Image src="/images/landing/zopper.svg" alt="Error" width={200} height={150}/>
+              <Image src="/images/landing/birla.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/cred.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/payU.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/zopper.svg" alt="Error" width={200} height={200}/>
             </div>
           </div>
         </div>
