@@ -142,6 +142,7 @@
 
 .partnerContainer {
     width: 100%;
+    height: 100%;
 }
 
 .partnerWrapper {
@@ -416,7 +417,7 @@
 .industryWrapper {
     display: flex;
     flex-direction: column;  
-    padding: 64px 100px; /* Maintain initial padding */
+    padding: 64px 100px;
     gap: 64px;
     border-radius: 24px;
     opacity: 0px;
@@ -425,7 +426,7 @@
 
 .industriesCards {
     display: flex;
-    justify-content: space-evenly; /* Adjust alignment */
+    justify-content: space-evenly; 
     gap: 70px;
 }
 
