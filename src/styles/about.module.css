@@ -9,7 +9,6 @@
   padding: 100px;
   gap: 10px;
   border-radius: 24px;
-  opacity: 0px;
 }
 
 
@@ -112,7 +111,6 @@
   line-height: 5vh;
   text-align: left;
   color: #2E2E38;
-  opacity: 0.6; /* No need for "px" here */
 }
 
 @media (max-width:1024px) {

@@ -5,10 +5,9 @@
 
 .quoteBox{
     background-color: #052761;
-padding: 100px;
-gap: 10px;
-border-radius: 24px;
-opacity: 0px;
+    padding: 100px;
+    gap: 10px;
+    border-radius: 24px;
 }
 
 .quoteBox p{

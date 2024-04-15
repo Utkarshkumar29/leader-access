@@ -43,7 +43,6 @@ text-align: left;
     padding: 24px;
     gap: 10px;
     border-radius: 12px ;
-    opacity: 0px;
     border: none;
     background-color: #EBEEF2;
 }
@@ -58,7 +57,6 @@ text-align: left;
     padding: 12px 48px 12px 48px;
     gap: 10px;
     border-radius: 12px;
-    opacity: 0px;
     background-color: #052761;
     color: white;
 }

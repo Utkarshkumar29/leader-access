@@ -152,7 +152,6 @@
     padding: 64px 100px; /* Default padding */
     gap: 64px;
     border-radius: 24px;
-    opacity: 0px;
     margin: 20px;
 }
 
@@ -196,7 +195,6 @@
     padding: 10px;
     border: 2px solid #052761;
     border-radius: 10px;
-    opacity: 1;
 }
 
 .partnerLogos {
@@ -303,7 +301,6 @@
     padding: 14px 40px 14px 40px;
     gap: 12px;
     border-radius: 12px;
-    opacity: 0px;
 }
 
 
@@ -420,7 +417,6 @@
     padding: 64px 100px;
     gap: 64px;
     border-radius: 24px;
-    opacity: 0px;
     justify-content: space-between;
 }
 
@@ -872,7 +868,6 @@
     background-color:#EBEEF2;    
     padding: 64px 100px 64px 100px;
     border-radius: 24px;
-    opacity: 0px;
     margin: 20px;
     align-items: center;
 }
@@ -915,7 +910,6 @@
     padding: 11px 30px 11px 30px;
     gap: 8px;
     border-radius: 12px;
-    opacity: 0px;
     color: white;
     display: flex;
     justify-content: center;
@@ -937,7 +931,6 @@
     padding: 64px 100px 64px 100px;
     gap: 64px;
     border-radius: 24px;
-    opacity: 0px;
     margin: 20px; 
 }
 
