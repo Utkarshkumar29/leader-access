@@ -3,6 +3,7 @@ import style from "../../../styles/leader.module.css";
 import Navbar from "@/components/navbar/page";
 import jobsStyle from "../../../styles/jobs.module.css";
 import cvStyle from "../../../styles/cv.module.css";
+import Footer from "@/components/footer/page";
 
 export default function CV(){
     return(
@@ -74,64 +75,7 @@ export default function CV(){
                 </div>
 
                 {/*Footer */}
-        <div className={style.footerContainer}>
-          <div className={style.footerWrapper}>
-              <div className={style.footerContents}>
-                <div className={style.whiteContainer}>
-                  <img src="/images/landing/white_logo.svg"/>
-                  <p className={style.footerHeading}>Leaders Access</p>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-                <div className={style.topicsContainer}>
-                  <p className={style.topicsHeading}>Pages</p>
-                  <div className={style.topics}>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Insights</p>
-                    <p>Case Studies</p>
-                    <p>Contact</p>
-                  </div>
-                </div>
-              </div>
-              <div className={style.copyRight}>
-                <p>Copyright © 2024 Leaders Access</p>
-                <div className={style.terms}>
-                  <p>Privacy Policy</p>
-                  <p>Terms & Conditions</p>
-                  <p>Disclaimer</p>
-                </div>
-              </div>
-          </div>
-        </div>
+        <Footer/>
 
             </div>
         </div>

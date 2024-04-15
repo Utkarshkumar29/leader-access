@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import style from "../styles/leader.module.css";
 import Link from "next/link";
 import Navbar from "@/components/navbar/page";
+import Image from "next/image";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -15,9 +16,10 @@ export default function Home() {
 
         {/*Hero Section */}
         <div className={style.heroImageContainer}>
-          <img
+          <Image
             src="/images/landing/hero_section.svg"
             className={style.heroImage}
+            alt="Error"
           />
         </div>
 
@@ -27,16 +29,16 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Partners</p>
               <div className={style.arrowContainer}>
-                <img src="/images/landing/leftArrow.svg" className="" />
-                <img src="/images/landing/rightArrow.svg" className="" />
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
               </div>
             </div>
             <div className={style.partnerLogos}>
-              <img src="/images/landing/birla.svg" alt="" className={style.heroImage}/>
-              <img src="/images/landing/cred.svg" alt="" />
-              <img src="/images/landing/paytm.svg" alt="" />
-              <img src="/images/landing/payU.svg" alt="" />
-              <img src="/images/landing/zopper.svg" alt="" />
+              <Image src="/images/landing/birla.svg" alt="Error" className={style.heroImage}/>
+              <Image src="/images/landing/cred.svg" alt="Error" />
+              <Image src="/images/landing/paytm.svg" alt="Error" />
+              <Image src="/images/landing/payU.svg" alt="Error" />
+              <Image src="/images/landing/zopper.svg" alt="Error" />
             </div>
           </div>
         </div>
@@ -47,14 +49,14 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Positions We Are Hiring </p>
               <div className={style.arrowContainer}>
-                <img src="/images/landing/leftArrow.svg" className="" />
-                <img src="/images/landing/rightArrow.svg" className="" />
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
               </div>
             </div>
             <div className={style.positions}>
-              <img src="/images/landing/posi_manager.svg" alt="" />
-              <img src="/images/landing/posi_chief.svg" className="" />
-              <img src="/images/landing/posi_tech.svg" className="" />
+              <Image src="/images/landing/posi_manager.svg" alt="error"/>
+              <Image src="/images/landing/posi_chief.svg" className="" alt="Errro"/>
+              <Image src="/images/landing/posi_tech.svg" className="" alt="Error"/>
             </div>
             <div className={style.buttonContainer}>
               <p className={style.positionsView}>View All</p>
@@ -74,7 +76,7 @@ export default function Home() {
                 }}
                 onMouseOut={() => setIsHovered(false)}
               >
-                <img src="/images/landing/service1.svg" />
+                <Image src="/images/landing/service1.svg" alt="Error"/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -83,7 +85,7 @@ export default function Home() {
                 {isHovered && <p className={style.hoveredBtn}>View All</p>}
               </div>
               <div className={style.serviceCard}>
-                <img src="/images/landing/service2.svg" />
+                <Image src="/images/landing/service2.svg" alt="Error"/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -92,7 +94,7 @@ export default function Home() {
                 {isHovered && <p className={style.positionsView}>View All</p>}
               </div>
               <div className={style.serviceCard}>
-                <img src="/images/landing/service3.svg" />
+                <Image src="/images/landing/service3.svg" alt="Error"/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -110,15 +112,15 @@ export default function Home() {
             <p className={style.partnerHeading}>Industries We Serve</p>
             <div className={style.industriesCards}>
               <div>
-                <img src="/images/landing/industry1.svg" />
+                <Image src="/images/landing/industry1.svg" alt="Error"/>
                 <div className={style.industriesCount}>
                   <p>30+ Industries</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
               <div className={style.lineSeparator}>
-                <img src="/images/landing/industry2.svg" />
-                <img src="/images/landing/industry3.svg" />
+                <Image src="/images/landing/industry2.svg" alt="Error"/>
+                <Image src="/images/landing/industry3.svg" alt="Error"/>
               </div>
               <div className={style.industryScroll}>
                 <p className={style.scrollHeading}>Software Services</p>
@@ -145,22 +147,22 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Unique Approach</p>
               <div className={style.arrowContainer}>
-                <img src="/images/landing/leftArrow.svg" className="" />
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
                 <p>1/12</p>
-                <img src="/images/landing/rightArrow.svg" className="" />
+                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
               </div>
             </div>
             <div className={style.ourApproachCardWrapper}>
               <div className={style.approachCardOne}>
                 <div className={style.frame}>
-                  <img src="/images/landing/Frame 1.svg" />
+                  <Image src="/images/landing/Frame 1.svg" alt="Error"/>
                 </div>
                 <p className={style.approachCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -169,14 +171,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -185,14 +187,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -201,14 +203,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -217,14 +219,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -233,14 +235,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -249,14 +251,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -265,14 +267,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -281,14 +283,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -297,14 +299,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -313,14 +315,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -329,14 +331,14 @@ export default function Home() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -353,14 +355,14 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Client Testimonials</p>
               <div className={style.arrowContainer}>
-                <img src="/images/landing/leftArrow.svg" className="" />
-                <img src="/images/landing/rightArrow.svg" className="" />
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
+                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
               </div>
             </div>
             <div className={style.scrollCardWrapper}>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" />
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -373,8 +375,8 @@ export default function Home() {
                 </div>
               </div>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -387,8 +389,8 @@ export default function Home() {
                 </div>
               </div>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -419,7 +421,7 @@ export default function Home() {
                 }}
                 onMouseOut={() => setIsHovered(false)}
               >
-                <img src="/images/landing/case.svg" />
+                <Image src="/images/landing/case.svg" alt="Error"/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
                 <p className={style.serviceCardDescription}>
                   Identify, attract, and retain top-tier executives who drive
@@ -427,7 +429,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={style.serviceCard}>
-                <img src="/images/landing/case.svg" />
+                <Image src="/images/landing/case.svg" alt="Error"/>
                 <p className={style.serviceCardHeading}>Talent Advisory</p>
                 <p className={style.serviceCardDescription}>
                   Optimize your talent acquisition and retention strategies with
@@ -435,7 +437,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={style.serviceCard}>
-                <img src="/images/landing/case.svg" />
+                <Image src="/images/landing/case.svg" alt="Error"/>
                 <p className={style.serviceCardHeading}>
                   Leadership Development
                 </p>
@@ -464,7 +466,7 @@ export default function Home() {
                 }}
                 onMouseOut={() => setIsHovered(false)}
               >
-                <img src="/images/landing/insights1.svg" />
+                <Image src="/images/landing/insights1.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   In UK Retail, a Surge in Female CEOs
                 </p>
@@ -475,7 +477,7 @@ export default function Home() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard}>
-                <img src="/images/landing/insights2.svg" />
+                <Image src="/images/landing/insights2.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   5 Traits CEO and Astronauts Share
                 </p>
@@ -486,7 +488,7 @@ export default function Home() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard}>
-                <img src="/images/landing/insights3.svg" />
+                <Image src="/images/landing/insights3.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   Performance Reviews: A Dreaded or Welcome Return?
                 </p>
@@ -517,7 +519,7 @@ export default function Home() {
             <div className={style.footerWrapper}>
                 <div className={style.footerContents}>
                     <div className={style.whiteContainer}>
-                        <img src="/images/landing/white_logo.svg" />
+                        <Image src="/images/landing/white_logo.svg" alt="Error"/>
                         <p className={style.footerHeading}>Leaders Access</p>
                     </div>
                     <div className={style.linksWrapper}>

@@ -34,6 +34,21 @@
     text-align: left;
 }
 
+@media only screen and (max-width: 768px) {    
+    .wrapper p {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+  
+    .wrapper p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
 .resourceCardContainer{
     width: 100%;
     height: 100%;

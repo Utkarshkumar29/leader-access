@@ -4,6 +4,7 @@ import aboutStyle from "../../../styles/about.module.css";
 import expertStyle from "../../../styles/expertise.module.css";
 import resourceStyle from "../../../styles/resource.module.css";
 import Navbar from "@/components/navbar/page";
+import Image from "next/image";
 
 export default function Insights() {
   return (
@@ -14,8 +15,8 @@ export default function Insights() {
 
         {/*Resource Hero Section */}
         <div className={resourceStyle.heroSection}>
-          <div className={resourceStyle.resourceHeroImg}>
-            <img src="/images/landing/Hero Section.svg" />
+          <div className={resourceStyle.resourceHeroImage}>
+            <Image src="/images/landing/Hero Section.svg" alt="Error"/>
           </div>
           <div className={resourceStyle.paraContainer}>
             <div className={resourceStyle.date}>March 29, 2024</div>
@@ -25,7 +26,7 @@ export default function Insights() {
                   It was a goal set long ago, one that has been accomplished
                   impressively. In 2010, British financier Baroness Helena
                   Morrissey founded the 30% Club, with the objective of placing
-                  women in at least 30% of board seats of the UK’s largest
+                  women in at least 30% of board seats of the UK&apos;s largest
                   public companies—those in the FTSE 100 stock index. That was
                   achieved by 2018.
                 </p>
@@ -36,9 +37,9 @@ export default function Insights() {
                   office—at least in one particular sector: retail. Last year,
                   women accounted for 35% of new CEO appointments at retail
                   companies, the highest ever, according to new report from Korn
-                  Ferry. That’s up from 5% in 2012. "Adding women CEOs has been
+                  Ferry. That&apos;s up from 5% in 2012. "Adding women CEOs has been
                   a constant theme of the last couple of years," says Sarah Lim,
-                  Korn Ferry's managing director of the Consumer Board and CEO
+                  Korn Ferry&apos;s managing director of the Consumer Board and CEO
                   Services practice and author of the report.
                 </p>
               </div>
@@ -58,7 +59,7 @@ export default function Insights() {
               <div>
                 <p>
                   Still, experts warn that more female representation in the
-                  corner office won’t happen overnight. The pipeline of
+                  corner office won&apos;t happen overnight. The pipeline of
                   potential CEO candidates tends to develop over the course of
                   decades, as budding executives need time and mentoring to get
                   experience in multiple roles across the business, says Donna
@@ -75,7 +76,7 @@ export default function Insights() {
                   or colleges, then the odds will be stacked against women. One
                   part of the solution is to make a given company more
                   attractive to women, for instance, by reducing barriers to
-                  their hiring, says Stuart Richards, Korn Ferry’s sector
+                  their hiring, says Stuart Richards, Korn Ferry&apos;s sector
                   leader, consumer products in the UK and EMEA. Employers might
                   consider skills-based recruitment instead of hiring based on
                   graduating from certain top colleges, Richards says. “Skills
@@ -85,7 +86,7 @@ export default function Insights() {
               </div>
               <div>
                 <p>
-                  Herdsman says it’s important for women to have so-called
+                  Herdsman says it&apos;s important for women to have so-called
                   sponsorship from a senior staff member to succeed. Such a
                   sponsor can advise the individual on which experiences or
                   roles to pursue. Perhaps most importantly, a mentor can help
@@ -115,7 +116,7 @@ export default function Insights() {
                 className={style.insightsCard}
                 style={{backgroundColor:"white"}}
               >
-                <img src="/images/landing/insights1.svg" />
+                <Image src="/images/landing/insights1.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   In UK Retail, a Surge in Female CEOs
                 </p>
@@ -126,7 +127,7 @@ export default function Insights() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"white"}}>
-                <img src="/images/landing/insights2.svg" />
+                <Image src="/images/landing/insights2.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   5 Traits CEO and Astronauts Share
                 </p>
@@ -137,7 +138,7 @@ export default function Insights() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"white"}}>
-                <img src="/images/landing/insights3.svg" />
+                <Image src="/images/landing/insights3.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   Performance Reviews: A Dreaded or Welcome Return?
                 </p>
@@ -159,7 +160,7 @@ export default function Insights() {
           <div className={style.footerWrapper}>
               <div className={style.footerContents}>
                 <div className={style.whiteContainer}>
-                  <img src="/images/landing/white_logo.svg"/>
+                  <Image src="/images/landing/white_logo.svg" alt="Error"/>
                   <p className={style.footerHeading}>Leaders Access</p>
                 </div>
                 <div className={style.topicsContainer}>

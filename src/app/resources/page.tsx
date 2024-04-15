@@ -4,6 +4,7 @@ import aboutStyle from "../../styles/about.module.css";
 import expertStyle from "../../styles/expertise.module.css";
 import resourceStyle from "../../styles/resource.module.css";
 import Navbar from "@/components/navbar/page";
+import Image from "next/image";
 
 export default function Resources() {
   return (
@@ -27,7 +28,7 @@ export default function Resources() {
               
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
               <Link href="/resources/insights">
-                <img src="/images/landing/insights1.svg" />
+                <Image src="/images/landing/insights1.svg" alt="Error"  />
                 <p className={style.insightsCardHeading}>
                   In UK Retail, a Surge in Female CEOs
                 </p>
@@ -39,7 +40,7 @@ export default function Resources() {
               </Link>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <img src="/images/landing/insights2.svg" />
+                <Image src="/images/landing/insights2.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   5 Traits CEO and Astronauts Share
                 </p>
@@ -50,7 +51,7 @@ export default function Resources() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <img src="/images/landing/insights3.svg" />
+                <Image src="/images/landing/insights3.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   Performance Reviews: A Dreaded or Welcome Return?
                 </p>
@@ -64,7 +65,7 @@ export default function Resources() {
                 className={style.insightsCard}
                 style={{backgroundColor:"#EBEEF2"}}
               >
-                <img src="/images/landing/insights1.svg" />
+                <Image src="/images/landing/insights1.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   In UK Retail, a Surge in Female CEOs
                 </p>
@@ -75,7 +76,7 @@ export default function Resources() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <img src="/images/landing/insights2.svg" />
+                <Image src="/images/landing/insights2.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   5 Traits CEO and Astronauts Share
                 </p>
@@ -86,7 +87,7 @@ export default function Resources() {
                 <p>March 29, 2024</p>
               </div>
               <div className={style.insightsCard} style={{backgroundColor:"#EBEEF2"}}>
-                <img src="/images/landing/insights3.svg" />
+                <Image src="/images/landing/insights3.svg" alt="Error"/>
                 <p className={style.insightsCardHeading}>
                   Performance Reviews: A Dreaded or Welcome Return?
                 </p>
@@ -105,7 +106,7 @@ export default function Resources() {
           <div className={style.footerWrapper}>
               <div className={style.footerContents}>
                 <div className={style.whiteContainer}>
-                  <img src="/images/landing/white_logo.svg"/>
+                  <Image src="/images/landing/white_logo.svg" alt="Error"/>
                   <p className={style.footerHeading}>Leaders Access</p>
                 </div>
                 <div className={style.topicsContainer}>

@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/page";
 import style from "../../../styles/leader.module.css";
 import jobsStyle from "../../../styles/jobs.module.css";
 import jobDStyle from "../../../styles/jobdescription.module.css"
+import Image from "next/image";
 
 export default function JobDescription() {
   return (
@@ -75,7 +76,7 @@ export default function JobDescription() {
           <div className={style.footerWrapper}>
               <div className={style.footerContents}>
                 <div className={style.whiteContainer}>
-                  <img src="/images/landing/white_logo.svg"/>
+                  <Image src="/images/landing/white_logo.svg" alt="Error"/>
                   <p className={style.footerHeading}>Leaders Access</p>
                 </div>
                 <div className={style.topicsContainer}>

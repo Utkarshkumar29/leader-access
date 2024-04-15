@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/page";
 import style from "../../styles/leader.module.css";
 import contactStyle from "../../styles/contact.module.css";
 import Footer from "@/components/footer/page";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -23,21 +24,21 @@ export default function Contact() {
               <div className={style.partnerHeading}>Contact US</div>
               <div className={contactStyle.contactNumber}>
                 <div className={contactStyle.logo}>
-                  <img src="/images/landing/Vector.svg" />
+                  <Image src="/images/landing/Vector.svg" alt="Error"/>
                 </div>
                 <p className={contactStyle.field}>Phone Number</p>
                 <p className={contactStyle.value}>123467890</p>
               </div>
               <div>
                 <div className={contactStyle.logo}>
-                  <img src="/images/landing/Vector.svg" />
+                  <Image src="/images/landing/Vector.svg" alt="Error"/>
                 </div>
                 <p className={contactStyle.field}>Phone Number</p>
                 <p className={contactStyle.value}>XYZ</p>
               </div>
               <div>
                 <div className={contactStyle.logo}>
-                  <img src="/images/landing/Vector.svg" />
+                  <Image src="/images/landing/Vector.svg" alt="Error"/>
                 </div>
                 <p className={contactStyle.field}>Address</p>
                 <p className={contactStyle.value}>XYZ</p>

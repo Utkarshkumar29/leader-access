@@ -1,11 +1,12 @@
 import Link from "next/link"
 import style from "../../styles/navbar.module.css"
+import Image from "next/image"
 
 export default function Navbar(){
     return(
         <div className={style.navbar_container}>
           <div className={style.navbar_logo}>
-            <img src="/images/landing/logo.svg" />
+            <Image src="/images/landing/logo.svg" alt="Error"/>
             <p className={style.nav_heading}>Leaders Access</p>
           </div>
           <div className={style.navButtons}>
@@ -16,19 +17,19 @@ export default function Navbar(){
             <div className={style.downContainer}>
               <Link href="/service">
                 <p className={style.navButton}>Services</p>
-                <img src="/images/landing/DownArrow.svg" />
+                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
               </Link>
             </div>
             <div className={style.downContainer}>
             <Link href="/expertise">
               <p className={style.navButton}>Expertise</p>
-              <img src="/images/landing/DownArrow.svg" />
+              <Image src="/images/landing/DownArrow.svg"alt="Error" />
             </Link>
             </div>
             <div className={style.downContainer}>
               <Link href="/resources">
               <p className={style.navButton}>Resources</p>
-              <img src="/images/landing/DownArrow.svg" />
+              <Image src="/images/landing/DownArrow.svg"alt="Error" />
               </Link>
             </div>
           </div>
@@ -36,7 +37,7 @@ export default function Navbar(){
             <Link href="/jobs">
             <div className={style.joinContainer}>
               <p className={style.joinButton}>Jobs</p>
-              <img src="/images/landing/DownArrow.svg" />
+              <Image src="/images/landing/DownArrow.svg" alt="Error"/>
             </div>
             </Link>
             <Link href="/contact">

@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Fragment } from 'react';
 import { Transition  } from 'react-transition-group';
 import { Dialog } from '@headlessui/react';
+import Image from "next/image";
 
 
 export default function ViewAll() {
@@ -29,7 +30,7 @@ export default function ViewAll() {
         {/*Navbar */}
         <div className={style.navbar_container}>
           <div className={style.navbar_logo}>
-            <img src="/images/landing/logo.svg" />
+            <Image src="/images/landing/logo.svg" alt="Error"/>
             <p className={style.nav_heading}>Leaders Access</p>
           </div>
           <div className={style.navButtons}>
@@ -40,26 +41,26 @@ export default function ViewAll() {
             <div className={style.downContainer}>
               <Link href="/service">
                 <p className={style.navButton}>Services</p>
-                <img src="/images/landing/DownArrow.svg" />
+                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
               </Link>
             </div>
             <div className={style.downContainer}>
               <Link href="/expertise">
                 <p className={style.navButton}>Expertise</p>
-                <img src="/images/landing/DownArrow.svg" />
+                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
               </Link>
             </div>
             <div className={style.downContainer}>
               <Link href="/resources">
                 <p className={style.navButton}>Resources</p>
-                <img src="/images/landing/DownArrow.svg" />
+                <Image src="/images/landing/DownArrow.svg" alt="Error"/>
               </Link>
             </div>
           </div>
           <div className={style.nav_contact}>
             <div className={style.joinContainer}>
               <p className={style.joinButton}>Jobs</p>
-              <img src="/images/landing/DownArrow.svg" />
+              <Image src="/images/landing/DownArrow.svg" alt="Error"/>
             </div>
             <p className={style.contactButton}>Contact</p>
           </div>
@@ -78,7 +79,7 @@ export default function ViewAll() {
             <div className={style.positions}>
               <div className={style.clientCard} onClick={handleReadMoreClick}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" />
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -92,7 +93,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -106,7 +107,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" />
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -120,7 +121,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -134,7 +135,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -148,7 +149,7 @@ export default function ViewAll() {
               </div>
               <div className={style.clientCard}>
                 <div className={style.invertImg}>
-                  <img src="/images/landing/invertWhite.svg" />
+                  <Image src="/images/landing/invertWhite.svg" alt="Error"/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut

@@ -2,6 +2,8 @@ import Link from "next/link";
 import style from "../../styles/leader.module.css";
 import aboutStyle from "../../styles/about.module.css";
 import Navbar from "@/components/navbar/page";
+import resourceStyle from "../../styles/resource.module.css";
+import Image from "next/image";
 
 export default function Service() {
   return (
@@ -10,8 +12,8 @@ export default function Service() {
         {/*Navbar */}
         <Navbar/>
 
-        <div className={aboutStyle.aboutContainer}>
-        <div className={aboutStyle.aboutIntro}>
+        <div className={resourceStyle.container}>
+          <div className={resourceStyle.wrapper}>
           <p>
             Identify, attract, and retain top-tier executives who drive business
             success and innovation.
@@ -26,7 +28,7 @@ export default function Service() {
         <div className={aboutStyle.intro}>
           <div className={style.partnerHeadings}></div>
           <div className={aboutStyle.introDescription}>
-            <img
+            <Image
               src="/images/about/intro_main.svg"
               alt="Error"
               className={aboutStyle.introImage}
@@ -54,8 +56,8 @@ export default function Service() {
           </div>
           <div className={aboutStyle.whyChooseUs}>
             <div className={aboutStyle.commonBlueCard}>
-              <div className={aboutStyle.chooseImgWrapper}>
-                <img src="/images/about/choose.svg" />
+              <div className={aboutStyle.chooseImageWrapper}>
+                <Image src="/images/about/choose.svg" alt="Error"/>
               </div>
               <div>
                 <p>Unique Approach</p>
@@ -67,8 +69,8 @@ export default function Service() {
               </div>
             </div>
             <div className={aboutStyle.commonBlueCard}>
-              <div className={aboutStyle.chooseImgWrapper}>
-                <img src="/images/about/choose.svg" />
+              <div className={aboutStyle.chooseImageWrapper}>
+                <Image src="/images/about/choose.svg" alt="Error"/>
               </div>
               <div>
                 <p>Client Success</p>
@@ -80,8 +82,8 @@ export default function Service() {
               </div>
             </div>
             <div className={aboutStyle.commonBlueCard}>
-              <div className={aboutStyle.chooseImgWrapper}>
-                <img src="/images/about/choose.svg" />
+              <div className={aboutStyle.chooseImageWrapper}>
+                <Image src="/images/about/choose.svg" alt="Error"/>
               </div>
               <div>
                 <p>Unique Approach</p>
@@ -101,22 +103,22 @@ export default function Service() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Search Process</p>
               <div className={style.arrowContainer}>
-                <img src="/images/landing/leftArrow.svg" className="" />
+                <Image src="/images/landing/leftArrow.svg" className="" alt="Error"/>
                 <p>1/12</p>
-                <img src="/images/landing/rightArrow.svg" className="" />
+                <Image src="/images/landing/rightArrow.svg" className="" alt="Error"/>
               </div>
             </div>
             <div className={style.ourApproachCardWrapper}>
               <div className={style.approachCardOne}>
                 <div className={style.frame}>
-                  <img src="/images/landing/Frame 1.svg" />
+                  <Image src="/images/landing/Frame 1.svg" alt="Error"/>
                 </div>
                 <p className={style.approachCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -125,14 +127,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -141,14 +143,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -157,14 +159,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -173,14 +175,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -189,14 +191,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -205,14 +207,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -221,14 +223,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -237,14 +239,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -253,14 +255,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -269,14 +271,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -285,14 +287,14 @@ export default function Service() {
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <img src="/images/landing/Layer_1.svg" />
+                  <Image src="/images/landing/Layer_1.svg" alt="Error"/>
                 </div>
                 <p className={style.commonCardHeading}>
                   Alignment with Organizational Goals
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role's contribution.
+                    Ensure understanding of role&apos;s contribution.
                   </li>
                   <li className={style.commontext}>
                     Verify alignment with company mission and values.
@@ -308,7 +310,7 @@ export default function Service() {
           <div className={style.footerWrapper}>
             <div className={style.footerContents}>
               <div className={style.whiteContainer}>
-                <img src="/images/landing/white_logo.svg" />
+                <Image src="/images/landing/white_logo.svg" />
                 <p className={style.footerHeading}>Leaders Access</p>
               </div>
               <div className={style.topicsContainer}>

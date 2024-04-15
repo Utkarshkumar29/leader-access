@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "../../styles/leader.module.css";
+import Image from "next/image";
 
 export default function Footer(){
     return(
@@ -7,7 +8,7 @@ export default function Footer(){
             <div className={style.footerWrapper}>
                 <div className={style.footerContents}>
                     <div className={style.whiteContainer}>
-                        <img src="/images/landing/white_logo.svg" />
+                        <Image src="/images/landing/white_logo.svg" alt="Error"/>
                         <p className={style.footerHeading}>Leaders Access</p>
                     </div>
                     <div className={style.linksWrapper}>

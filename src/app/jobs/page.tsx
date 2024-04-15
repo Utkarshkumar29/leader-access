@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar/page"
 import style from "../../styles/leader.module.css"
 import jobsStyle from "../../styles/jobs.module.css";
+import Image from "next/image";
 
 export default function Jobs(){
     return(
@@ -49,12 +50,12 @@ export default function Jobs(){
                         <p className={style.partnerHeading}>Positions We Are Hiring </p>
                         </div>
                         <div className={style.positions}>
-                        <img src="/images/landing/posi_manager.svg" alt="" className={style.positionsImg}/>
-                        <img src="/images/landing/posi_chief.svg" className="" />
-                        <img src="/images/landing/posi_tech.svg" className="" />
-                        <img src="/images/landing/posi_manager.svg" alt="" className={style.positionsImg}/>
-                        <img src="/images/landing/posi_chief.svg" className="" />
-                        <img src="/images/landing/posi_tech.svg" className="" />
+                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error"/>
+                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error"/>
+                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error"/>
+                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error"/>
+                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error"/>
+                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error"/>
                         </div>
                     </div>
                 </div>
@@ -64,7 +65,7 @@ export default function Jobs(){
           <div className={style.footerWrapper}>
               <div className={style.footerContents}>
                 <div className={style.whiteContainer}>
-                  <img src="/images/landing/white_logo.svg"/>
+                  <Image src="/images/landing/white_logo.svg" alt="Error"/>
                   <p className={style.footerHeading}>Leaders Access</p>
                 </div>
                 <div className={style.topicsContainer}>
