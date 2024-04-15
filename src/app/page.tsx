@@ -1,14 +1,10 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import style from "../styles/leader.module.css";
-import Link from "next/link";
 import Navbar from "@/components/navbar/page";
 import Image from "next/image";
 import Footer from "@/components/footer/page";
 
 export default function Home() {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
@@ -76,10 +72,6 @@ export default function Home() {
             <div className={style.serviceCardContainer}>
               <div
                 className={style.serviceCard}
-                onMouseOver={() => {
-                  setIsHovered(true);
-                }}
-                onMouseOut={() => setIsHovered(false)}
               >
                 <Image src="/images/landing/service1.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
