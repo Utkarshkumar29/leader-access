@@ -1,5 +1,6 @@
-import footerStyle from "../../styles/footer.module.css";
 import Image from "next/image";
+import footerStyle from "../../styles/footer.module.css";
+import leader from "../../../public/images/landing/white_logo.svg"
 
 export default function Footer() {
     return(
@@ -7,7 +8,7 @@ export default function Footer() {
             <div className={footerStyle.footerWrapper}>
                 <div className={footerStyle.footerContents}>
                     <div className={footerStyle.whiteContainer}>
-                        
+                        <Image src={leader} alt="Error" width={40} height={40}/>
                         <p className={footerStyle.footerHeading}>Leaders Access</p>
                     </div>
                     <div className={footerStyle.linksWrapper}>
