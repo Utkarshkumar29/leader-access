@@ -410,10 +410,6 @@ export default function Home() {
             <div className={style.serviceCardContainer}>
               <div
                 className={style.serviceCard}
-                onMouseOver={() => {
-                  setIsHovered(true);
-                }}
-                onMouseOut={() => setIsHovered(false)}
               >
                 <Image src="/images/landing/case.svg" alt="Error" width={400} height={300}/>
                 <p className={style.serviceCardHeading}>Executive Search</p>
@@ -455,10 +451,6 @@ export default function Home() {
             <div className={style.insightsCardContainer}>
               <div
                 className={style.insightsCard}
-                onMouseOver={() => {
-                  setIsHovered(true);
-                }}
-                onMouseOut={() => setIsHovered(false)}
               >
                 <Image src="/images/landing/insights1.svg" alt="Error" width={400} height={300}/>
                 <p className={style.insightsCardHeading}>
