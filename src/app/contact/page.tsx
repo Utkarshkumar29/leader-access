@@ -60,7 +60,7 @@ export default function Contact() {
               </div>
               <div className={contactStyle.inputWrapper}>
                 <label className={contactStyle.formLabel}>Message</label>
-                <textarea type="text" placeholder="Your Message" className={contactStyle.input} rows="10" />
+                <textarea type="text" placeholder="Your Message" className={contactStyle.input} rows={10} />
               </div>
               <div className={contactStyle.btnWrapper}>
                 <p>Submit</p>
