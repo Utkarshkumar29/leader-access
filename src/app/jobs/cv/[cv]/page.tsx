@@ -27,8 +27,14 @@ export default function CV() {
       formData.append("current_company", current_company);
       formData.append("current_designation", current_designation);
       formData.append("experience", experience);
-      formData.append("upload_cv", upload_cv);
-
+  
+      if (upload_cv instanceof Blob) {
+        formData.append("upload_cv", upload_cv);
+      } else {
+        console.error("Upload CV is not a valid Blob");
+        return;
+      }
+  
       const response = await axios.post(
         "https://do.employeeforums.co.in/api/employer/submit-cv",
         formData,
@@ -43,23 +49,23 @@ export default function CV() {
       console.log("Error creating the object", error);
     }
   };
+  
 
-  const [jobdescription, setJobDescription] = useState({});
-  const { cv: jobId } = useParams();
-
+  const [jobdescription, setJobDescription] = useState([]);
+  const jobId=useParams()
   const fetchJobDescription = async () => {
     try {
-      const response = await axios.get(`https://do.employeeforums.co.in/api/employer/job-update-delete/${jobId}`);
+      const response = await axios.get(`https://do.employeeforums.co.in/api/employer/job-update-delete/${jobId.cv}`);
       console.log(response?.data);
       setJobDescription(response.data);
     } catch (error) {
-      console.log("Failed to fetch job description", error);
+      console.log("Failed to fetch job description", error); 
     }
-  };
+  }
 
-  useEffect(() => {
-    fetchJobDescription();
-  }, []);
+  useEffect(()=>{
+    fetchJobDescription()
+  },[])
 
   return (
     <div className={style.container}>
@@ -71,19 +77,19 @@ export default function CV() {
             <div className={jobsStyle.inputWrapper}>
               <div>
                 <label>Job Title</label>
-                <input placeholder="Job Title" value={jobdescription?.job_title || ""} readOnly />
+                <input placeholder="Job Title" value={jobdescription?.job_title}/>
               </div>
               <div>
                 <label>Industry</label>
-                <input placeholder="Industry" value={jobdescription?.industry || ""} readOnly />
+                <input placeholder="Industry" value={jobdescription?.industry}/>
               </div>
               <div>
                 <label>Location</label>
-                <input placeholder="Location" value={jobdescription?.location || ""} readOnly />
+                <input placeholder="Location" value={jobdescription?.location}/>
               </div>
               <div className={jobsStyle.btnWrapper}>
                 <label>Posted</label>
-                <input placeholder="Location" value={(jobdescription?.job_posted || "").substring(0, 10)} readOnly />
+                <input placeholder="Location" value={jobdescription?.job_posted?.substring(0, 10)} />
               </div>
             </div>
           </div>
