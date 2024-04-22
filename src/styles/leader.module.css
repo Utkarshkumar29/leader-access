@@ -201,7 +201,6 @@
     display: flex;
     justify-content: center;
     gap: 2vw;
-    flex-wrap: wrap;
 }
 
 /* Media Queries */
@@ -830,7 +829,7 @@
     text-align: left;
 }
 
-.clientDescription div:nth-child(2){
+.clientDescription div:nth-child(2),.commonClientDescription div:nth-child(2){
     font-size: 18px;
     font-weight: 400;
     line-height: 23.83px;

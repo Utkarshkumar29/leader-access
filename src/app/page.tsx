@@ -53,6 +53,18 @@ export default function Home() {
   },[])
 
   const [isHovered,setIsHovered]=useState(false)
+
+  const handleMouseEnter = (index) => {
+    setIsHovered(index);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(null);
+  };
+
+  const handlePartnerRight=()=>{
+    
+  }
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
@@ -78,8 +90,8 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Partners</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" alt="Error" width={10} height={10}/>
-                <Image src="/images/landing/RightArrow.svg" alt="Error" width={10} height={10}/>
+                <Image src="/images/landing/leftArrow.svg" alt="Error" width={10} height={10} onClick={()=>{handlePartnerLeft()}}/>
+                <Image src="/images/landing/rightArrow.svg" alt="Error" width={10} height={10} onClick={()=>{handlePartnerRight()}}/>
               </div>
             </div>
             <div className={style.partnerLogos}>
@@ -88,6 +100,12 @@ export default function Home() {
               <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={200}/>
               <Image src="/images/landing/payU.svg" alt="Error" width={200} height={200}/>
               <Image src="/images/landing/zopper.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/niyogin.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/safexpay.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/birla.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/cred.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={200}/>
+              <Image src="/images/landing/payU.svg" alt="Error" width={200} height={200}/>
             </div>
           </div>
         </div>
@@ -99,7 +117,7 @@ export default function Home() {
               <p className={style.partnerHeading}>Positions We Are Hiring </p>
               <div className={style.arrowContainer}>
               <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20} onClick={showPrevCards}/>
-              <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20} onClick={showNextCards}/>
+              <Image src="/images/landing/rightArrow.svg" alt="Error" width={10} height={10} onClick={showNextCards}/>
               </div>
             </div>
             <div className={style.positions}>
@@ -248,174 +266,180 @@ export default function Home() {
                   <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Cultural Fit
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Assess compatibility with organizational culture.
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Determine potential for team inspiration.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 1.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Leadership Skills and Experience
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Seek strong leadership qualities and relevant experience.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Prioritize strategic thinking ability.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 2.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Track Record of Success
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Evaluate past achievements and impact.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Consider performance in previous roles
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 3.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Emotional Intelligence
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
-                  </li>
-                  <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Assess ability to manage emotions and build relationships.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 4.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Innovative Thinking
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Prioritize creativity, adaptability, and openness to change.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Look for candidates who drive growth through innovation.  
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 5.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Collaborative Skills
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Evaluate ability to work across teams and departments.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Assess capacity for stakeholder relationships.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 6.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Problem-Solving Ability
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Look for strong critical thinking skills.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Assess practical solution development.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 7.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Long-Term Vision
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Seek clear vision and commitment to long-term success.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Assess ability to inspire others.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 8.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Reference Checks
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Verify qualifications and performance.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Confirm suitability for leadership.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 9.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Offer Negotiation
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Extend formal job offer with compensation and benefits.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Finalize start date and onboarding details.
                   </li>
                 </ul>
               </div>
               <div className={style.commonCard}>
                 <div className={style.frame2}>
-                  <Image src="/images/landing/Layer_1.svg" alt="Error" width={50} height={50}/>
+                  <Image src="/images/landing/Approach 9.svg" alt="Error" width={50} height={50}/>
                 </div>
                 <p className={style.commonCardHeading}>
-                  Alignment with Organizational Goals
+                Onboarding  
                 </p>
                 <ul>
                   <li className={style.commontext}>
-                    Ensure understanding of role&apos;s contribution.
+                  Facilitate smooth transition with orientation and training.
+
                   </li>
                   <li className={style.commontext}>
-                    Verify alignment with company mission and values.
+                  Introduce to key stakeholders.
                   </li>
                 </ul>
               </div>
@@ -434,44 +458,44 @@ export default function Home() {
               </div>
             </div>
             <div className={style.scrollCardWrapper}>
-              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
+              <div className={isHovered==0 ? style.clientCard : style.commonClientCard} onMouseOver={()=>{handleMouseEnter(0)}} onMouseLeave={()=>handleMouseLeave()}>
                 <div className={style.invertImage}>
-                  {isHovered ? <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/> : <Image src="/images/landing/invertBlue.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>}
+                  {isHovered==0 ? <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/> : <Image src="/images/landing/invertBlue.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>}
                 </div>
-                <p className={isHovered ? style.clientDes:style.commonClientDes}>
+                <p className={isHovered==0 ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo <span className={isHovered ? style.clientShow : style.commonClientShow}>...Read more</span>
+                  leo <span className={isHovered==0 ? style.clientShow : style.commonClientShow}>...Read more</span>
                 </p>
-                <div className={isHovered ? style.clientDescription : style.commonClientDescription}>
+                <div className={isHovered==0 ? style.clientDescription : style.commonClientDescription}>
                   <div>Manish Taneja</div>
                   <div>Client</div>
                 </div>
               </div>
-              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
+              <div className={isHovered==1 ? style.clientCard : style.commonClientCard} onMouseOver={()=>{handleMouseEnter(1)}} onMouseLeave={()=>handleMouseLeave()}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
+                  {isHovered==1 ? <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/> : <Image src="/images/landing/invertBlue.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>}
                 </div>
-                <p className={isHovered ? style.clientDes:style.commonClientDes}>
+                <p className={isHovered==1 ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo <span className={style.clientShow}>...Read more</span>
+                  leo <span className={isHovered==1 ? style.clientShow : style.commonClientShow}>...Read more</span>
                 </p>
-                <div className={style.clientDescription}>
+                <div className={isHovered==1 ? style.clientDescription : style.commonClientDescription}>
                   <div>Manish Taneja</div>
                   <div>Client</div>
                 </div>
               </div>
-              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
+              <div className={isHovered==2 ? style.clientCard : style.commonClientCard} onMouseOver={()=>{handleMouseEnter(2)}} onMouseLeave={()=>handleMouseLeave()}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
+                  {isHovered==2 ? <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/> : <Image src="/images/landing/invertBlue.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>}
                 </div>
-                <p className={isHovered ? style.clientDes:style.commonClientDes}>
+                <p className={isHovered==2 ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo <span className={style.clientShow}>...Read more</span>
+                  leo <span className={isHovered==2 ? style.clientShow : style.commonClientShow}>...Read more</span>
                 </p>
-                <div className={style.clientDescription}>
+                <div className={isHovered==2 ? style.clientDescription : style.commonClientDescription}>
                   <div>Manish Taneja</div>
                   <div>Client</div>
                 </div>
