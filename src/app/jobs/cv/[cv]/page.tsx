@@ -17,7 +17,7 @@ export default function CV() {
   const [experience, setExperience] = useState("");
   const [upload_cv, setUploadCV] = useState(null);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
       const formData = new FormData();
