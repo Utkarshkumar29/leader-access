@@ -98,10 +98,6 @@ export default function Home() {
               <Image src="/images/landing/zopper.svg" alt="Error" width={200} height={200}/>
               <Image src="/images/landing/niyogin.svg" alt="Error" width={200} height={200}/>
               <Image src="/images/landing/safexpay.svg" alt="Error" width={200} height={200}/>
-              <Image src="/images/landing/birla.svg" alt="Error" width={200} height={200}/>
-              <Image src="/images/landing/cred.svg" alt="Error" width={200} height={200}/>
-              <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={200}/>
-              <Image src="/images/landing/payU.svg" alt="Error" width={200} height={200}/>
             </div>
           </div>
         </div>
