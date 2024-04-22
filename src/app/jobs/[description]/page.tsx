@@ -34,7 +34,7 @@ export default function JobDescription() {
   const renderKeySkills = () => {
     if (jobdescription && jobdescription.keyskills) {
       if (jobdescription?.keyskills) {
-        const skillsArray = jobdescription.keyskills.split(',').map(skill => skill.trim());
+        const skillsArray = jobdescription.keyskills.split(',').map((skill: string) => skill.trim());
         return skillsArray.map((skill, index) => (
           <div key={index} className={jobDStyle.skillItem}>{skill}</div>
         ));
