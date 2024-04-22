@@ -16,7 +16,6 @@ export default function Jobs(){
     min_experience:number;
     max_experience:number;
     location:string
-
   }
 
   const [jobsList, setJobsList] = useState<JobItem[] | null>(null);

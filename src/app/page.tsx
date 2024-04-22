@@ -8,7 +8,16 @@ import Link from "next/link";
 import axios from "axios";
 
 export default function Home() {
-  const [jobsList,setJobsList]=useState([])
+  interface JobItem {
+    id: number;
+    job_title: string;
+    industry: string;
+    location: string;
+    min_experience: number;
+    max_experience: number;
+  }
+
+  const [jobsList, setJobsList] = useState<JobItem[]>([]);
 
   const fetchJobs=async()=>{
     try {
