@@ -15,7 +15,7 @@ export default function CV() {
   const [current_company, setCurrentCompany] = useState("");
   const [current_designation, setCurrentDesignation] = useState("");
   const [experience, setExperience] = useState("");
-  const [upload_cv, setUploadCV] = useState(null);
+  const [upload_cv, setUploadCV] = useState<File | null>(null);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
