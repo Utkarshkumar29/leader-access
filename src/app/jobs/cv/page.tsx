@@ -14,9 +14,9 @@ export default function CV() {
   const [current_company, setCurrentCompany] = useState("");
   const [current_designation, setCurrentDesignation] = useState("");
   const [experience, setExperience] = useState("");
-  const [upload_cv, setUploadCV] = useState(null);
+  const [upload_cv, setUploadCV] = useState<File | null>(null);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
       const formData = new FormData();
@@ -26,7 +26,9 @@ export default function CV() {
       formData.append("current_company", current_company);
       formData.append("current_designation", current_designation);
       formData.append("experience", experience);
-      formData.append("upload_cv", upload_cv);
+      if (upload_cv) {
+        formData.append("upload_cv", upload_cv);
+      }
 
       const response = await axios.post(
         "https://do.employeeforums.co.in/api/employer/submit-cv",
