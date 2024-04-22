@@ -86,8 +86,8 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Our Partners</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" alt="Error" width={10} height={10} onClick={()=>{handlePartnerLeft()}}/>
-                <Image src="/images/landing/rightArrow.svg" alt="Error" width={10} height={10} onClick={()=>{handlePartnerRight()}}/>
+                <Image src="/images/landing/leftArrow.svg" alt="Error" width={10} height={10}/>
+                <Image src="/images/landing/rightArrow.svg" alt="Error" width={10} height={10} />
               </div>
             </div>
             <div className={style.partnerLogos}>
