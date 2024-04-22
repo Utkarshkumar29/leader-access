@@ -46,7 +46,14 @@ export default function CV() {
     }
   };
 
-  const [jobdescription, setJobDescription] = useState([]);
+  interface JobDescription {
+    job_title: string;
+    industry: string;
+    location: string;
+    job_posted: string;
+  }
+
+  const [jobdescription, setJobDescription] = useState<JobDescription | null>(null);
   const jobId=useParams()
   const fetchJobDescription = async () => {
     try {
