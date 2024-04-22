@@ -27,14 +27,10 @@ export default function CV() {
       formData.append("current_company", current_company);
       formData.append("current_designation", current_designation);
       formData.append("experience", experience);
-  
-      if (upload_cv instanceof Blob) {
+      if (upload_cv) {
         formData.append("upload_cv", upload_cv);
-      } else {
-        console.error("Upload CV is not a valid Blob");
-        return;
       }
-  
+
       const response = await axios.post(
         "https://do.employeeforums.co.in/api/employer/submit-cv",
         formData,
@@ -49,7 +45,6 @@ export default function CV() {
       console.log("Error creating the object", error);
     }
   };
-  
 
   const [jobdescription, setJobDescription] = useState([]);
   const jobId=useParams()
