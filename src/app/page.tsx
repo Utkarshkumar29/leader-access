@@ -52,19 +52,15 @@ export default function Home() {
     fetchJobs()
   },[])
 
-  const [isHovered,setIsHovered]=useState(false)
+  const [isHovered, setIsHovered] = useState<number | null>(null);
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index:number) => {
     setIsHovered(index);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(null);
   };
-
-  const handlePartnerRight=()=>{
-    
-  }
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
