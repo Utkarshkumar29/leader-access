@@ -9,7 +9,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Jobs(){
-    const [jobsList,setJobsList]=useState([])
+  interface JobItem {
+    id: number;
+    job_title: string;
+  }
+
+  const [jobsList, setJobsList] = useState<JobItem[] | null>(null);
 
   const fetchJobs=async()=>{
     try {
