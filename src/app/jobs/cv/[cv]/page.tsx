@@ -1,11 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import style from "../../../styles/leader.module.css";
+import style from "../../../../styles/leader.module.css";
 import Navbar from "@/components/navbar/page";
-import jobsStyle from "../../../styles/jobs.module.css";
-import cvStyle from "../../../styles/cv.module.css";
+import jobsStyle from "../../../../styles/jobs.module.css";
+import cvStyle from "../../../../styles/cv.module.css";
 import Footer from "@/components/footer/page";
+import { useParams } from "next/navigation";
 
 export default function CV() {
   const [name, setName] = useState("");
@@ -43,28 +44,45 @@ export default function CV() {
     }
   };
 
+  const [jobdescription, setJobDescription] = useState([]);
+  const jobId=useParams()
+  const fetchJobDescription = async () => {
+    try {
+      const response = await axios.get(`https://do.employeeforums.co.in/api/employer/job-update-delete/${jobId.cv}`);
+      console.log(response?.data);
+      setJobDescription(response.data);
+    } catch (error) {
+      console.log("Failed to fetch job description", error); 
+    }
+  }
+
+  useEffect(()=>{
+    fetchJobDescription()
+  },[])
+
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
         <Navbar />
         <div className={jobsStyle.careerContainer}>
           <div className={jobsStyle.jobIntro}>
-            <p className={jobsStyle.title}>Managing Director</p>
+            <p className={jobsStyle.title}>{jobdescription?.job_title}</p>
             <div className={jobsStyle.inputWrapper}>
               <div>
                 <label>Job Title</label>
-                <input placeholder="Job Title" />
+                <input placeholder="Job Title" value={jobdescription?.job_title}/>
               </div>
               <div>
                 <label>Industry</label>
-                <input placeholder="Industry" />
+                <input placeholder="Industry" value={jobdescription?.industry}/>
               </div>
               <div>
                 <label>Location</label>
-                <input placeholder="Location" />
+                <input placeholder="Location" value={jobdescription?.location}/>
               </div>
               <div className={jobsStyle.btnWrapper}>
-                <p className={jobsStyle.search}>Search Job</p>
+                <label>Posted</label>
+                <input placeholder="Location" value={jobdescription?.job_posted?.substring(0, 10)} />
               </div>
             </div>
           </div>

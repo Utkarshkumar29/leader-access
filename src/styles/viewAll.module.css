@@ -1,6 +1,7 @@
 .clientSayContainer{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .quoteBox{
@@ -17,4 +18,42 @@
     line-height: 80px;
     text-align: left;
 
+}
+
+/* modal.module.css */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    width: 720px;
+    height: 523px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #EBEEF2;
+}
+
+.modalClientCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.modalClientDescription{
+    color: #052761;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.78px;
+    text-align: left;
 }

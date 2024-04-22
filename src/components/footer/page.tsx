@@ -1,5 +1,6 @@
 import Image from "next/image";
 import footerStyle from "../../styles/footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
     return(
@@ -14,20 +15,19 @@ export default function Footer() {
                         <div className={footerStyle.topicsContainer}>
                             <p className={footerStyle.topicsHeading}>Pages</p>
                             <div className={footerStyle.topics}>
-                                <p>Home</p>
-                                <p>About</p>
-                                <p>Insights</p>
-                                <p>Case Studies</p>
-                                <p>Contact</p>
+                                <Link href="/" legacyBehavior><p>Home</p></Link>
+                                <Link href="/about" legacyBehavior><p>About</p></Link>
+                                <Link href="/resources" legacyBehavior><p>Insights</p></Link>
+                                <Link href="/caseStudies" legacyBehavior><p>Case Studies</p></Link>
+                                <Link href="/contact" legacyBehavior><p>Contact</p></Link>
                             </div>
                         </div>
                         <div className={footerStyle.topicsContainer}>
                             <p className={footerStyle.topicsHeading}>Services</p>
                             <div className={footerStyle.topics}>
-                                <p>Executive Search</p>
-                                <p>Talent Advisory</p>
-                                <p>Recruitment Process</p>
-                                <p>Outsourcing</p>
+                                <Link href="/service" legacyBehavior><p>Executive Search</p></Link>
+                                <Link href="/talent" legacyBehavior><p>Talent Advisory</p></Link>
+                                <Link href="/recruitment_Process_Outsourcing" legacyBehavior><p>Recruitment Process <br></br> Outsourcing</p></Link>
                             </div>
                         </div>
                         <div className={footerStyle.topicsContainer}>
@@ -40,15 +40,15 @@ export default function Footer() {
                         <div className={footerStyle.topicsContainer}>
                             <p className={footerStyle.topicsHeading}>Jobs</p>
                             <div className={footerStyle.topics}>
-                                <p>Browse Jobs</p>
-                                <p>Submit Your CV</p>
+                                <Link href="/jobs" legacyBehavior><p>Browse Jobs</p></Link>
+                                <Link href="/jobs/cv" legacyBehavior><p>Submit Your CV</p></Link>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={footerStyle.whiteLine}></div>
                     <div className={footerStyle.copyRight}>
-                    <p>Copyright © 2024 Leaders Access</p>
+                    <p>Copyright © <span>{(new Date().getFullYear())}</span> Leaders Access</p>
                     <div className={footerStyle.terms}>
                         <p>Privacy Policy</p>
                         <p>Terms & Conditions</p>

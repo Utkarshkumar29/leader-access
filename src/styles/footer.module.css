@@ -79,6 +79,10 @@
     text-align: left;
 }
 
+.topics p{
+    cursor: pointer;
+}
+
 .topicsHeading{
     font-size: 24px;
     font-weight: 600;

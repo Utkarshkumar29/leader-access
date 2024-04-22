@@ -4,21 +4,25 @@ import style from "../../styles/leader.module.css";
 import aboutStyle from "../../styles/about.module.css";
 import expertStyle from "../../styles/expertise.module.css";
 import viewStyle from "../../styles/viewAll.module.css";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 //import { Fragment } from 'react';
 //import { Dialog } from '@headlessui/react';
 import Image from "next/image";
+import Navbar from "@/components/navbar/page";
+import Footer from "@/components/footer/page";
+import { Dialog, Transition } from "@headlessui/react";
 
 
 export default function ViewAll() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Function to handle "Read more" click
   const handleReadMoreClick = () => {
-    console.log("Read More clicked");
     setIsModalOpen(true);
   };
 
+  // Function to handle closing the modal
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -27,43 +31,7 @@ export default function ViewAll() {
       <div className={style.wrapper}>
 
         {/*Navbar */}
-        <div className={style.navbar_container}>
-          <div className={style.navbar_logo}>
-            <Image src="/images/landing/logo.svg" alt="Error" width={120} height={64}/>
-            <p className={style.nav_heading}>Leaders Access</p>
-          </div>
-          <div className={style.navButtons}>
-            <p className={style.navButton}>Home</p>
-            <Link href="/about">
-              <p className={style.navButton}>About</p>
-            </Link>
-            <div className={style.downContainer}>
-              <Link href="/service">
-                <p className={style.navButton}>Services</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
-              </Link>
-            </div>
-            <div className={style.downContainer}>
-              <Link href="/expertise">
-                <p className={style.navButton}>Expertise</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
-              </Link>
-            </div>
-            <div className={style.downContainer}>
-              <Link href="/resources">
-                <p className={style.navButton}>Resources</p>
-                <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
-              </Link>
-            </div>
-          </div>
-          <div className={style.nav_contact}>
-            <div className={style.joinContainer}>
-              <p className={style.joinButton}>Jobs</p>
-              <Image src="/images/landing/DownArrow.svg" alt="Error" width={20} height={20}/>
-            </div>
-            <p className={style.contactButton}>Contact</p>
-          </div>
-        </div>
+        <Navbar/>
 
         {/*What client say */}
         <div className={viewStyle.clientSayContainer}>
@@ -75,24 +43,31 @@ export default function ViewAll() {
         {/*Client Testimonials */}
         <div className={style.positionContainer}>
           <div className={style.positionWrapper}>
-            <div className={style.positions}>
-              <div className={style.clientCard} onClick={handleReadMoreClick}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={20} height={20} />
+            <div className={style.partnerHeadings}>
+              <p className={style.partnerHeading}>Client Testimonials</p>
+              <div className={style.arrowContainer}>
+                <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20}/>
+              </div>
+            </div>
+            <div className={style.scrollCardWrapper}>
+              <div className={style.clientCard}>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo <p className={style.clientShow}>...Read more</p>
+                  leo <span className={style.clientShow} onClick={()=>{handleReadMoreClick()}}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -100,13 +75,13 @@ export default function ViewAll() {
                   leo <span className={style.clientShow}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={20} height={20}/>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -114,13 +89,13 @@ export default function ViewAll() {
                   leo <span className={style.clientShow}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -128,13 +103,13 @@ export default function ViewAll() {
                   leo <span className={style.clientShow}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -142,13 +117,13 @@ export default function ViewAll() {
                   leo <span className={style.clientShow}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
               <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>
                 </div>
                 <p className={style.clientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -156,32 +131,33 @@ export default function ViewAll() {
                   leo <span className={style.clientShow}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Integration of provided HTML structure */}
-        {/*<Transition.Root show={isModalOpen} as={Fragment}>
-          <Dialog
-            as="div"
-            className="fixed inset-0 z-30 overflow-y-auto"
-            onClose={handleCloseModal}
-          >
-            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-50" />
+        {isModalOpen && (
+          <div className={viewStyle.modal}>
 
-            <div className="flex items-center justify-center min-h-screen">
-              <Dialog.Title as="h3">Dialog Title</Dialog.Title>
-              <Dialog.Description>
-                This is the content of the dialog.
-              </Dialog.Description>
-              <button onClick={handleCloseModal}>Close</button>
+              <div className={viewStyle.modalClientCard}>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertBlue.svg"alt="Error" width={64} height={48}/>
+                </div>
+                <p className={style.clientDes}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+                <div className={viewStyle.modalClientDescription}>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
+                </div>
             </div>
-          </Dialog>
-  </Transition.Root>*/}
+          </div>
+        )}
+
+        <Footer/>
 
 
       </div>

@@ -1,0 +1,44 @@
+.blogsContainer{
+    width: 1,440px;
+    height: 266px;
+    padding: 100px 120px 100px 120px;
+    gap: 10px;
+}
+
+.blogsContainer p{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: left;
+    color: #16171C;
+}
+
+.insightContainer{
+    width: 1,440px;
+    height: 266px;
+    padding: 100px 120px 100px 120px;
+    gap: 10px;
+}
+
+.insightContainer p{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: left;
+    color: #16171C;
+}
+
+.caseContainer{
+    width: 1,440px;
+    height: 266px;
+    padding: 100px 120px 100px 120px;
+    gap: 10px;
+}
+
+.caseContainer p{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: left;
+    color: #16171C;
+}

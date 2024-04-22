@@ -1,11 +1,30 @@
+'use client'
 import Navbar from "@/components/navbar/page"
 import style from "../../styles/leader.module.css"
 import jobsStyle from "../../styles/jobs.module.css";
 import Image from "next/image";
 import Footer from "@/components/footer/page";
 import Link from "next/link";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function Jobs(){
+    const [jobsList,setJobsList]=useState([])
+
+  const fetchJobs=async()=>{
+    try {
+      const respose=await axios.get('https://do.employeeforums.co.in/api/employer/job-post')
+      console.log(respose?.data)
+      setJobsList(respose?.data)
+    } catch (error) {
+      console.log("Error getting jobs",error)
+    }
+  }
+
+    useEffect(()=>{
+        fetchJobs()
+    },[])
+
     return(
         <div className={style.container}>
             <div className={style.wrapper}>
@@ -54,13 +73,27 @@ export default function Jobs(){
                         <p className={style.partnerHeading}>Positions We Are Hiring </p>
                         </div>
                         <div className={style.positions}>
-                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error" width={400} height={300}/>
-                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error" width={400} height={300}/>
-                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error" width={400} height={300}/>
-                        <Image src="/images/landing/posi_manager.svg" className={style.positionsImage} alt="Error" width={400} height={300}/>
-                        <Image src="/images/landing/posi_chief.svg" className="" alt="Error" width={400} height={300}/>
-                        <Image src="/images/landing/posi_tech.svg" className="" alt="Error" width={400} height={300}/>
-                        </div>
+              {jobsList && jobsList.length>0 && jobsList.map((job,index)=>{
+                return(
+                  <div className={style.positionCard} key={job?.id}>
+                    <div>
+                      <div className={style.positionTitle}>
+                        <p>{job?.job_title}</p>
+                        <p>{job?.industry}</p>
+                      </div>
+                      <div className={style.positionDes}>
+                        <div><Image src="/images/landing/location.svg" width={10} height={10} alt="Error" style={{width:"30px"}}/><p>{job?.location}</p></div>
+                        <div><Image src="/images/landing/briefcase.svg"  width={10} height={10} alt="Error" style={{width:"30px"}}/><p>{job?.min_experience}-{job?.max_experience} Yrs</p></div>
+                      </div>
+                      <div className={style.linkWrapper}>
+                      <p><Link href={`/jobs/${job?.id}`} legacyBehavior>View Details</Link></p>
+                        <p><Link href="/jobs/cv" legacyBehavior>Submit CV</Link></p>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
                     </div>
                 </div>
 

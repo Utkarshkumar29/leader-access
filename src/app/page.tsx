@@ -1,10 +1,49 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import style from "../styles/leader.module.css";
 import Navbar from "@/components/navbar/page";
 import Image from "next/image";
 import Footer from "@/components/footer/page";
+import Link from "next/link";
+import axios from "axios";
 
 export default function Home() {
+  const [jobsList,setJobsList]=useState([])
+
+  const fetchJobs=async()=>{
+    try {
+      const respose=await axios.get('https://do.employeeforums.co.in/api/employer/job-post')
+      console.log(respose?.data)
+      setJobsList(respose?.data)
+    } catch (error) {
+      console.log("Error getting jobs",error)
+    }
+  }
+
+  const [startIndex, setStartIndex] = useState(0);
+  const cardsPerPage = 3; 
+
+  useEffect(()=>{
+    console.log(startIndex)
+  },[])
+  const showNextCards = () => {
+    if (startIndex + cardsPerPage < jobsList.length) {
+      setStartIndex(startIndex + cardsPerPage);
+    }
+  };
+
+  const showPrevCards = () => {
+    if (startIndex - cardsPerPage >= 0) {
+      setStartIndex(startIndex - cardsPerPage);
+    }
+  };
+
+
+  useEffect(()=>{
+    fetchJobs()
+  },[])
+
+  const [isHovered,setIsHovered]=useState(false)
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
@@ -50,18 +89,37 @@ export default function Home() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Positions We Are Hiring </p>
               <div className={style.arrowContainer}>
-              <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20}/>
-              <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20}/>
+              <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20} onClick={showPrevCards}/>
+              <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20} onClick={showNextCards}/>
               </div>
             </div>
             <div className={style.positions}>
-              <Image src="/images/landing/posi_manager.svg" alt="error" width={400} height={300}/>
-              <Image src="/images/landing/posi_chief.svg" alt="Errro" width={400} height={300}/>
-              <Image src="/images/landing/posi_tech.svg" alt="Error" width={400} height={300}/>
+              {jobsList && jobsList.length>0 && jobsList.slice(startIndex, startIndex + cardsPerPage).map((job,index)=>{
+                return(
+                  <div className={style.positionCard} key={job?.id}>
+                    <div>
+                      <div className={style.positionTitle}>
+                        <p>{job?.job_title}</p>
+                        <p>{job?.industry}</p>
+                      </div>
+                      <div className={style.positionDes}>
+                        <div><Image src="/images/landing/location.svg" width={10} height={10} alt="Error" style={{width:"30px"}}/><p>{job?.location}</p></div>
+                        <div><Image src="/images/landing/briefcase.svg"  width={10} height={10} alt="Error" style={{width:"30px"}}/><p>{job?.min_experience}-{job?.max_experience} Yrs</p></div>
+                      </div>
+                      <div className={style.linkWrapper}>
+                      <p><Link href={`/jobs/${job?.id}`} legacyBehavior>View Details</Link></p>
+                        <p><Link href="/jobs/cv" legacyBehavior>Submit CV</Link></p>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
-            <div className={style.buttonContainer}>
-              <p className={style.positionsView}>View All</p>
-            </div>
+            <Link href="/jobs" legacyBehavior>
+              <div className={style.buttonContainer}>
+                <p className={style.positionsView}>View All</p>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -116,6 +174,7 @@ export default function Home() {
                 <Image src="/images/landing/industry2.svg" alt="Error" width={400} height={300}/>
                 <Image src="/images/landing/industry3.svg" alt="Error" width={400} height={300}/>
               </div>
+              <div>
               <div className={style.industryScroll}>
                 <p className={style.scrollHeading}>Software Services</p>
                 <p>IT Services</p>
@@ -124,12 +183,24 @@ export default function Home() {
                 <p>Banks</p>
                 <p>Fin-tech</p>
                 <p>NBFC</p>
-                <p>Insurance</p>
-                <p>Insurance</p>
-                <p>Insurance</p>
-                <p>Insurance</p>
-                <p>Insurance</p>
-                <p>Insurance</p>
+                <p>Asset Management</p>
+                <p>Capital Markets</p>
+                <p>Logistics & Retail </p>
+                <p>Education & EdTech</p>
+                <p>FMCG / Consumer </p>
+                <p>E-Commerce</p>
+                <p>Media & Entertainment</p>
+                <p>Research & Analytics</p>
+                <p>Consulting</p>
+                <p>Travel & Hospitality</p>
+                <p>Automobile & Auto components</p>
+                <p>Medical Devices</p>
+                <p>Pharma & Life Sciences</p>
+                <p>Packaging & Printing</p>
+                <p>Chemical & Paints</p>
+                <p>Industrial & Capital Equipment</p>
+              </div>
+              <div className={style.exploreBtn}><Link href="/expertise" legacyBehavior><p>Explore All</p></Link></div>
               </div>
             </div>
           </div>
@@ -354,11 +425,25 @@ export default function Home() {
               </div>
             </div>
             <div className={style.scrollCardWrapper}>
-              <div className={style.clientCard}>
+              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
                 <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>
+                  {isHovered ? <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/> : <Image src="/images/landing/invertBlue.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>}
                 </div>
-                <p className={style.clientDes}>
+                <p className={isHovered ? style.clientDes:style.commonClientDes}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo <span className={isHovered ? style.clientShow : style.commonClientShow}>...Read more</span>
+                </p>
+                <div className={isHovered ? style.clientDescription : style.commonClientDescription}>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
+                </div>
+              </div>
+              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
+                </div>
+                <p className={isHovered ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
                   leo <span className={style.clientShow}>...Read more</span>
@@ -368,25 +453,11 @@ export default function Home() {
                   <div>Client</div>
                 </div>
               </div>
-              <div className={style.clientCard}>
+              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
                 <div className={style.invertImage}>
                   <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
                 </div>
-                <p className={style.clientDes}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo <span className={style.clientShow}>...Read more</span>
-                </p>
-                <div className={style.clientDescription}>
-                  <div>Manish Taneja</div>
-                  <div>Client</div>
-                </div>
-              </div>
-              <div className={style.clientCard}>
-                <div className={style.invertImage}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
-                </div>
-                <p className={style.clientDes}>
+                <p className={isHovered ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
                   leo <span className={style.clientShow}>...Read more</span>
@@ -397,9 +468,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <Link href="/viewAll" legacyBehavior>
             <div className={style.buttonContainer}>
               <p className={style.positionsView}>View All</p>
             </div>
+            </Link>
           </div>
         </div>
 
@@ -439,7 +512,7 @@ export default function Home() {
               </div>
             </div>
             <div className={style.buttonContainer}>
-              <p className={style.positionsView}>View All</p>
+              <Link href="/resources/caseStudies" legacyBehavior><p className={style.positionsView}>View All</p></Link>
             </div>
           </div>
         </div>
@@ -486,7 +559,7 @@ export default function Home() {
               </div>
             </div>
             <div className={style.buttonContainer}>
-              <p className={style.positionsView}>View All</p>
+              <p className={style.positionsView}><Link href="/resources" legacyBehavior>View All</Link></p>
             </div>
           </div>
         </div>
@@ -496,7 +569,7 @@ export default function Home() {
           <div className={style.touchWrapper}>
             <div>Ready to elevate your organization with top-tier talent ?</div>
             <div>Contact us today to schedule a consultation.</div>
-            <div className={style.darkBtn}>Get in Touch</div>
+            <div className={style.darkBtn}><Link href="/contact" legacyBehavior>Get in Touch</Link></div>
           </div>
         </div>
 

@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import style from "../../styles/leader.module.css";
 import aboutStyle from "../../styles/about.module.css";
@@ -5,8 +6,10 @@ import Navbar from "@/components/navbar/page";
 import resourceStyle from "../../styles/resource.module.css";
 import Footer from "@/components/footer/page";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function About() {
+  const [isHovered,setIsHovered]=useState(false)
   return (
     <div className={style.container}>
         <div className={style.wrapper}>
@@ -87,7 +90,7 @@ export default function About() {
               </div>
             </div>
             <div className={style.partnerLogos}>
-            <Image src="/images/landing/birla.svg" alt="Error" className={style.heroImage} width={200} height={150}/>
+            <Image src="/images/landing/birla.svg" alt="Error" width={200} height={150}/>
               <Image src="/images/landing/cred.svg" alt="Error" width={200} height={150}/>
               <Image src="/images/landing/paytm.svg" alt="Error" width={200} height={150}/>
               <Image src="/images/landing/payU.svg" alt="Error" width={200} height={150}/>
@@ -102,57 +105,59 @@ export default function About() {
             <div className={style.partnerHeadings}>
               <p className={style.partnerHeading}>Client Testimonials</p>
               <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className="" alt="Error" width={20} height={20}/>
-                <Image src="/images/landing/rightArrow.svg" className="" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/leftArrow.svg" alt="Error" width={20} height={20}/>
+                <Image src="/images/landing/RightArrow.svg" alt="Error" width={20} height={20}/>
               </div>
             </div>
-            <div className={style.positions}>
-              <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" width={20} height={20} alt="Error"/>
+            <div className={style.scrollCardWrapper}>
+              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
+                <div className={style.invertImage}>
+                  {isHovered ? <Image src="/images/landing/invertWhite.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/> : <Image src="/images/landing/invertBlue.svg"alt="Error" width={2} height={2} style={{width:"50px"}}/>}
                 </div>
-                <p className={style.clientDes}>
+                <p className={isHovered ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo <span className={style.clientShow}>...Read more</span>
+                  leo <span className={isHovered ? style.clientShow : style.commonClientShow}>...Read more</span>
                 </p>
-                <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                <div className={isHovered ? style.clientDescription : style.commonClientDescription}>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
-              <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
                 </div>
-                <p className={style.clientDes}>
+                <p className={isHovered ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
                   leo <span className={style.clientShow}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
-              <div className={style.clientCard}>
-                <div className={style.invertImg}>
-                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20}/>
+              <div className={isHovered ? style.clientCard : style.commonClientCard} onMouseOver={()=>{setIsHovered(true)}} onMouseLeave={()=>setIsHovered(false)}>
+                <div className={style.invertImage}>
+                  <Image src="/images/landing/invertWhite.svg" alt="Error" width={20} height={20} style={{width:"50px"}}/>
                 </div>
-                <p className={style.clientDes}>
+                <p className={isHovered ? style.clientDes:style.commonClientDes}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
                   leo <span className={style.clientShow}>...Read more</span>
                 </p>
                 <div className={style.clientDescription}>
-                  <p>Manish Taneja</p>
-                  <p>Client</p>
+                  <div>Manish Taneja</div>
+                  <div>Client</div>
                 </div>
               </div>
             </div>
+            <Link href="/viewAll">
             <div className={style.buttonContainer}>
               <p className={style.positionsView}>View All</p>
             </div>
+            </Link>
           </div>
         </div>
 

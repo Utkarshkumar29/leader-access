@@ -301,6 +301,12 @@
     padding: 14px 40px 14px 40px;
     gap: 12px;
     border-radius: 12px;
+    cursor: pointer;
+}
+
+.positionsView a{
+    text-decoration: none;
+    color: #052761;
 }
 
 
@@ -503,6 +509,16 @@
 
 .industryScroll::-webkit-scrollbar-thumb {
     background-color: #052761;
+}
+
+.exploreBtn{
+    border: 2px solid #052761;
+    padding: 5px 18px 5px 40px;
+    gap: 12px;
+    border-radius: 12px;
+    width: 100px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 /* Media Queries */
@@ -725,12 +741,28 @@
 }
 
 .clientCard{
-    max-width: 400px; 
-    width: 100%; 
+    width: 376px; 
+    height: 307px;
     padding: 24px;
     gap: 16px;
     border-radius: 24px;
     background-color: #052761;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.commonClientCard{
+    width: 376px; 
+    height: 307px;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 24px;
+    background-color: #EBEEF2;
+    color: #052761;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .invertImg{
@@ -749,7 +781,14 @@
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-    padding-top: 15px;
+}
+
+.commonClientDes{
+    color: #54545D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 .clientShow{
@@ -761,6 +800,14 @@
     cursor: pointer;
 }
 
+.commonClientShow{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #052761;
+}
+
 .clientDescription{
     font-size: 24px;
     font-weight: 400;
@@ -770,6 +817,17 @@
     display: flex;
     flex-direction: column;
     gap: 0px;
+}
+
+.commonClientDescription{
+    color: #052761;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.78px;
+    text-align: left;
 }
 
 .clientDescription div:nth-child(2){
@@ -915,6 +973,11 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+.darkBtn a{
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -1103,4 +1166,121 @@
     .approachCardHeading{
         font-size: 15px;
     }
+}
+
+.positionCard{
+    background-color: #EBEEF2;
+    width: 376px;
+    height: 235px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+@keyframes moveIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes moveOut {
+    from {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(20%);
+    }
+  }
+  
+  /* Apply the animation to entering and leaving cards */
+  .positionCard-enter {
+    animation: moveIn 0.5s ease-out forwards;
+  }
+  
+  .positionCard-exit {
+    animation: moveOut 0.5s ease-in forwards;
+  }
+
+.positionTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.positionTitle p:nth-child(1){
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    color: #052761;
+    margin-bottom: 5px;
+}
+
+.positionTitle p:nth-child(2){
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2E2E38;
+    padding: 0px;
+    margin: 0px;
+}
+
+.positionDes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.positionDes div{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.positionDes div:nth-child(2){
+    justify-content: end;
+}
+
+.linkWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.linkWrapper p:nth-child(1){
+    flex: 1;
+    padding: 18px;
+    gap: 12px;
+    border-radius: 12px;
+    border: 2px solid #052761;
+    text-align: center;
+}
+
+.linkWrapper p:nth-child(2){
+    flex: 1;
+    padding: 18px;
+    gap: 8px;
+    border-radius: 12px;
+    background-color: #052761;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.linkWrapper p:nth-child(1) a,
+.linkWrapper p:nth-child(2) a {
+    text-decoration: none;
+    color: white;
+}
+
+.linkWrapper p:nth-child(1) a{
+    color: #052761;
 }

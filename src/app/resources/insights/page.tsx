@@ -17,7 +17,13 @@ export default function Insights() {
         {/*Resource Hero Section */}
         <div className={resourceStyle.heroSection}>
           <div className={resourceStyle.resourceHeroImage}>
-            <Image src="/images/landing/Hero Section.svg" alt="Error"/>
+          <Image
+              src="/images/landing/Hero Section.svg"
+              alt="Error"
+              className={style.heroImage}
+              width={1084}
+              height={720}
+            />
           </div>
           <div className={resourceStyle.paraContainer}>
             <div className={resourceStyle.date}>March 29, 2024</div>
@@ -110,7 +116,7 @@ export default function Insights() {
 
         {/*Insights */}
         <div className={style.insightsContainer}>
-          <div className={style.insightsWrapper} style={{backgroundColor:"#EBEEF2"}}>
+          <div className={style.insightsWrapper} style={{backgroundColor:"#EBEEF2",padding:"10px"}}>
             <p className={style.partnerHeading}>Read More Insights</p>
             <div className={style.insightsCardContainer}>
               <div
