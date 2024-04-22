@@ -12,6 +12,11 @@ export default function Jobs(){
   interface JobItem {
     id: number;
     job_title: string;
+    industry:String;
+    min_experience:number;
+    max_experience:number;
+    location:string
+
   }
 
   const [jobsList, setJobsList] = useState<JobItem[] | null>(null);
