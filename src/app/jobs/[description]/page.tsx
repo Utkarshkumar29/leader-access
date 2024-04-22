@@ -1,16 +1,20 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Navbar from "@/components/navbar/page";
 import style from "../../../styles/leader.module.css";
 import jobsStyle from "../../../styles/jobs.module.css";
 import jobDStyle from "../../../styles/jobdescription.module.css"
+import Image from "next/image";
+import Footer from "@/components/footer/page";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function JobDescription() {
   const [jobdescription, setJobDescription] = useState<any>({});
-  const router = useRouter();
+  const router = useRouter(); 
   const { description } = router.query;
 
   const fetchJobDescription = async () => {
@@ -24,17 +28,17 @@ export default function JobDescription() {
   }
 
   useEffect(() => {
-    if (description) {
-      fetchJobDescription();
-    }
-  }, [description]);
+    fetchJobDescription();
+  }, []);
 
   const renderKeySkills = () => {
     if (jobdescription && jobdescription.keyskills) {
-      const skillsArray = jobdescription.keyskills.split(',').map(skill => skill.trim());
-      return skillsArray.map((skill, index) => (
-        <div key={index} className={jobDStyle.skillItem}>{skill}</div>
-      ));
+      if (jobdescription?.keyskills) {
+        const skillsArray = jobdescription.keyskills.split(',').map(skill => skill.trim());
+        return skillsArray.map((skill, index) => (
+          <div key={index} className={jobDStyle.skillItem}>{skill}</div>
+        ));
+      }
     }
     return null;
   };
@@ -50,19 +54,19 @@ export default function JobDescription() {
             <div className={jobsStyle.inputWrapper}>
               <div>
                 <label>Job Title</label>
-                <input placeholder="Job Title" value={jobdescription?.job_title || ""} />
+                <input placeholder="Job Title" value={jobdescription?.job_title}/>
               </div>
               <div>
                 <label>Industry</label>
-                <input placeholder="Industry" value={jobdescription?.industry || ""} />
+                <input placeholder="Industry" value={jobdescription?.industry}/>
               </div>
               <div>
                 <label>Location</label>
-                <input placeholder="Location" value={jobdescription?.location || ""} />
+                <input placeholder="Location" value={jobdescription?.location}/>
               </div>
               <div className={jobsStyle.btnWrapper}>
                 <label>Posted</label>
-                <input placeholder="Location" value={jobdescription?.job_posted?.substring(0, 10) || ""} />
+                <input placeholder="Location" value={jobdescription?.job_posted?.substring(0, 10)} />
               </div>
             </div>
           </div>
@@ -86,14 +90,14 @@ export default function JobDescription() {
             </div>
             <div className={jobDStyle.CvBtnWrapper}>
               <Link href={`/jobs/cv/${jobdescription?.id}`}>
-                <button className={jobDStyle.CvBtn}>Submit CV</button>
+              <button className={jobDStyle.CvBtn}>Submit CV</button>
               </Link>
             </div>
           </div>
         </div>
 
-        {/* Footer */}
-        <Footer />
+        {/*Footer */}
+        <Footer/>
       </div>
     </div>
   );
