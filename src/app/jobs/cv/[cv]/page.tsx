@@ -44,21 +44,22 @@ export default function CV() {
     }
   };
 
-  const [jobdescription, setJobDescription] = useState([]);
-  const jobId=useParams()
+  const [jobdescription, setJobDescription] = useState({});
+  const { cv: jobId } = useParams();
+
   const fetchJobDescription = async () => {
     try {
-      const response = await axios.get(`https://do.employeeforums.co.in/api/employer/job-update-delete/${jobId.cv}`);
+      const response = await axios.get(`https://do.employeeforums.co.in/api/employer/job-update-delete/${jobId}`);
       console.log(response?.data);
       setJobDescription(response.data);
     } catch (error) {
-      console.log("Failed to fetch job description", error); 
+      console.log("Failed to fetch job description", error);
     }
-  }
+  };
 
-  useEffect(()=>{
-    fetchJobDescription()
-  },[])
+  useEffect(() => {
+    fetchJobDescription();
+  }, []);
 
   return (
     <div className={style.container}>
@@ -70,19 +71,19 @@ export default function CV() {
             <div className={jobsStyle.inputWrapper}>
               <div>
                 <label>Job Title</label>
-                <input placeholder="Job Title" value={jobdescription?.job_title}/>
+                <input placeholder="Job Title" value={jobdescription?.job_title || ""} readOnly />
               </div>
               <div>
                 <label>Industry</label>
-                <input placeholder="Industry" value={jobdescription?.industry}/>
+                <input placeholder="Industry" value={jobdescription?.industry || ""} readOnly />
               </div>
               <div>
                 <label>Location</label>
-                <input placeholder="Location" value={jobdescription?.location}/>
+                <input placeholder="Location" value={jobdescription?.location || ""} readOnly />
               </div>
               <div className={jobsStyle.btnWrapper}>
                 <label>Posted</label>
-                <input placeholder="Location" value={jobdescription?.job_posted?.substring(0, 10)} />
+                <input placeholder="Location" value={(jobdescription?.job_posted || "").substring(0, 10)} readOnly />
               </div>
             </div>
           </div>
