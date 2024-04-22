@@ -30,13 +30,21 @@ export default function JobDescription() {
     fetchJobDescription();
   }, []);
 
+  interface JobDescription {
+    keyskills: string; 
+  }
+
+  
   const renderKeySkills = () => {
-    if (jobdescription?.keyskills){
-      const skillsArray = jobdescription.keyskills.split(',').map(skill => skill.trim());
-    return skillsArray.map((skill, index) => (
-      <div key={index} className={jobDStyle.skillItem}>{skill}</div>
-    ));
-    };
+    if (jobdescription) {
+      if (jobdescription.keyskills) {
+        const skillsArray = jobdescription.keyskills.split(',').map(skill => skill.trim());
+        return skillsArray.map((skill, index) => (
+          <div key={index} className={jobDStyle.skillItem}>{skill}</div>
+        ));
+      }
+    }
+    return null;
   };
 
   return (
