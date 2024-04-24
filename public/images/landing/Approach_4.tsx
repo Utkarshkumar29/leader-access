@@ -1,6 +1,10 @@
-import React from "react";
+import React, { SVGProps } from 'react';
 
-const Approach_4 = ({ className, style }) => (
+interface ApproachProps extends SVGProps<SVGSVGElement> {
+  className?: string;
+}
+
+const Approach_4: React.FC<ApproachProps> = ({ className, style }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="25"
