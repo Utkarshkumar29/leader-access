@@ -14,14 +14,16 @@ import Link from 'next/link';
 
 export default function JobDescription() {
   const [jobdescription, setJobDescription] = useState<any>({});
-  const router = useRouter(); 
-  const { description } = router.query;
+  const id = useParams(); 
+  console.log(id,'ggg')
 
   const fetchJobDescription = async () => {
     try {
-      const response = await axios.get(`https://do.employeeforums.co.in/api/employer/job-update-delete/${description}`);
-      console.log(response?.data);
-      setJobDescription(response.data);
+      if(id){
+        const response = await axios.get(`https://do.employeeforums.co.in/api/employer/job-update-delete/${id.description}`);
+        console.log(response?.data);
+        setJobDescription(response.data);
+      }
     } catch (error) {
       console.log("Failed to fetch job description", error); 
     }

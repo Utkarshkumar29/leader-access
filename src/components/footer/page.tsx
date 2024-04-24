@@ -26,8 +26,8 @@ export default function Footer() {
                             <p className={footerStyle.topicsHeading}>Services</p>
                             <div className={footerStyle.topics}>
                                 <Link href="/service" legacyBehavior><p>Executive Search</p></Link>
-                                <Link href="/talent" legacyBehavior><p>Talent Advisory</p></Link>
-                                <Link href="/recruitment_Process_Outsourcing" legacyBehavior><p>Recruitment Process <br></br> Outsourcing</p></Link>
+                                <Link href="/service/talent" legacyBehavior><p>Talent Advisory</p></Link>
+                                <Link href="/service/recruitment_Process_Outsourcing" legacyBehavior><p>Recruitment Process <br></br> Outsourcing</p></Link>
                             </div>
                         </div>
                         <div className={footerStyle.topicsContainer}>
