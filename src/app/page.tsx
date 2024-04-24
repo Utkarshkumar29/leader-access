@@ -331,10 +331,10 @@ const handleServiceMouseLeave = () => {
                 />
                 <p>{selected}/12</p>
                 <Image
-                  src="/images/landing/RightArrow.svg"
+                  src="/images/landing/rightArrow.svg"
                   alt="Error"
-                  width={20}
-                  height={20}
+                  width={10}
+                  height={10}
                   onClick={() => {
                     handleAddClick();
                   }}
@@ -702,10 +702,10 @@ const handleServiceMouseLeave = () => {
                   height={20}
                 />
                 <Image
-                  src="/images/landing/RightArrow.svg"
+                  src="/images/landing/rightArrow.svg"
                   alt="Error"
-                  width={20}
-                  height={20}
+                  width={10}
+                  height={10}
                 />
               </div>
             </div>
