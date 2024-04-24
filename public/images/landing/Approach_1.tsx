@@ -3,7 +3,6 @@ import React, { SVGProps } from 'react';
 interface ApproachProps extends SVGProps<SVGSVGElement> {
   className?: string;
 }
-
 const Approach_1: React.FC<ApproachProps> = ({ className, style }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
