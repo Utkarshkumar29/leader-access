@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar/page";
 import Image from "next/image";
 import resourceStyle from "../../styles/resource.module.css";
 import Footer from "@/components/footer/page";
+import PositionCard from "@/components/PositionCard/page";
 
 export default function Expertise() {
   return (
@@ -162,29 +163,7 @@ export default function Expertise() {
         </div>
 
         {/*Positions*/}
-        <div className={style.positionContainer}>
-          <div className={style.positionWrapper}>
-            <div className={style.partnerHeadings}>
-              <p className={style.partnerHeading}>Positions We Are Hiring </p>
-              <div className={style.arrowContainer}>
-                <Image src="/images/landing/leftArrow.svg" className=""  alt="Error" width={20} height={20}/>
-                <Image src="/images/landing/rightArrow.svg" className=""  alt="Error" width={20} height={20}/>
-              </div>
-            </div>
-            <div className={style.positions}>
-              <Image
-                src="/images/landing/posi_manager.svg"
-                className={style.positionsImage} alt="Error"
-                width={400} height={300}
-              />
-              <Image src="/images/landing/posi_chief.svg" className=""  alt="Error"width={400} height={300}/>
-              <Image src="/images/landing/posi_tech.svg" className=""  alt="Error"width={400} height={300}/>
-            </div>
-            <div className={style.buttonContainer}>
-              <p className={style.positionsView}>View All</p>
-            </div>
-          </div>
-        </div>
+        <PositionCard/>
 
         {/*Footer */}
         <Footer/>
